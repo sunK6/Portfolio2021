@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MamondePJ</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script>
+        window.addEventListener("load", function () {
+
+            var gnb = document.querySelector(".gnb");
+            var top = document.querySelector("#top");
+
+            gnb.onmouseover = function () {
+                top.classList.add("on");
+            }; ////// mouseover ////////
+            gnb.onmouseout = function () {
+                top.classList.remove("on");
+            }; ////// mouseout ////////
+
+
+        }); //////// load //////////////////////////
+    </script>
+</head>
+
+<body>
+    <!-- 1.상단영역 -->
+    <div id="top" class="prt">
+        <header class="ibx top">
+            <div class="pbx col-2">
+                <!-- 상단로고 -->
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="./images/logo_main.svg" alt="메인로고">
+                        <img src="./images/logo.svg" alt="메인로고">
+                    </a>
+                </h1>
+            </div>
+
+            <div class="pbx col-10 prt">
+                <!-- GNB 메뉴 -->
+                <nav class="gnb clb">
+                    <ul>
+                        <!-- 1)베스트&신제품 -->
+                        <li>
+                            <a href="#">베스트&신제품</a>
+                        </li>
+                        <!-- 2)스킨케어 -->
+                        <li>
+                            <a href="#">스킨케어</a>
+                            <div class="sbx">
+                                <a href="#" class="slink">스킨케어 전체보기 ＞</a>
+                                <ol class="subtype">
+                                    <li class="fnon">
+                                        <strong class="stit">
+                                            <a href="#">제품 유형별</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a href="#">스킨 / 로션</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">에센스/앰플/세럼</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">크림</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">아이크림</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">마스크</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">바디</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">썬케어</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">클렌징</a>
+                                    </li>
+                                </ol>
+                                <ol class="subtype">
+                                    <li class="fnon">
+                                        <strong class="stit">
+                                            <a href="#">피부 고민별</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a href="#">수분 / 보습</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">안티에이징</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">트러블</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">미백</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">모공</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">민감</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">자외선 차단</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">각질</a>
+                                    </li>
+                                </ol>
+                                <ol class="subtype">
+                                    <li class="fnon">
+                                        <strong class="stit">
+                                            <a href="#">맨</a>
+                                        </strong>
+                                    </li>
+                                </ol>
+                                <!-- 서브이미지 -->
+                                <a href="#" class="simg">
+                                    <img src="./images/img_skincare_banner01.jpg" alt="서브이미지">
+                                    <span>프로바이오틱스 세라마이드 크림</span>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- 3)메이크업 -->
+                        <li>
+                            <a href="#">메이크업</a>
+                            <div class="sbx">
+                                <a href="#" class="slink">메이크업 전체보기 ＞</a>
+                                <ol class="subtype">
+                                    <li class="fnon">
+                                        <strong class="stit">
+                                            <a href="#">제품 유형별</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <a href="#">페이스</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">립</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">아이</a>
+                                    </li>
+                                </ol>
+                                <!-- 서브이미지 -->
+                                <a href="#" class="simg msimg">
+                                    <img src="./images/img_makeup_banner01.jpg" alt="서브이미지">
+                                    <span>크리미 틴트 컬러밤 쉬폰</span>
+                                </a>
+                                <a href="#" class="simg">
+                                    <img src="./images/img_makeup_banner02.jpg" alt="서브이미지">
+                                    <span>올스테이 파운데이션 글로우</span>
+                                </a>
+
+                            </div>
+
+                        </li>
+                        <!-- 4)플라워스토리 -->
+                        <li>
+                            <a href="#">플라워스토리</a>
+                        </li>
+                        <!-- 5)브랜드 -->
+                        <li>
+                            <a href="#">브랜드</a>
+                            <div class="sbx">
+                                <a href="#" class="slink btit">Mamonde</a>
+                                <ol class="subtype bsubtype">
+                                    <li class="fnon">
+                                        <a href="#">브랜드 스토리</a>
+                                    </li>
+                                    <li class="wfull">
+                                        <a href="#">마몽드 가든</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">라운지</a>
+                                    </li>
+                                </ol>
+                                <!-- 서브이미지 -->
+                                <a href="#" class="simg msimg">
+                                    <img src="./images/img_brand_banner01.jpg" alt="서브이미지">
+                                    <span>마몽드의 NEW 뮤즈!</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 공통 메뉴 -->
+                <nav class="util">
+                    <a href="#">로그인</a>
+                    <a href="#">매장찾기</a>
+                    <a href="#" class="searchBtn">
+                        <img src="./images/btn_search_main.png" alt="검색">
+                        <img src="./images/btn_search.png" alt="검색">
+                    </a>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- 2.배너영역 -->
+    <div id="ban" class="prt">
+        <!-- 배너슬라이드이미지 영역 -->
+        <section class="slide">
+            <ul>
+                <li><span class="ir">배너이미지1</span></li>
+                <li><span class="ir">배너이미지2</span></li>
+                <li><span class="ir">배너이미지3</span></li>
+            </ul>
+        </section>
+        <section class="ibx ban">
+            <h2 class="bld">배너영역</h2>
+            <div class="pbx col-12">
+                <div class="slideinner">
+                    <!-- 배너텍스트 -->
+                    <div id="bantxt">
+                        <a href="#">
+                            <strong class="bantxt1">NEW 플라워 앰플 마스크팩</strong>
+                            <span class="bantxt2">
+                                앰플 한 병을 시트 한 장에 가득 담아 매일매일 건강한 피부로
+                            </span>
+                        </a>
+                    </div>
+                    <!-- 버튼영역 -->
+                    <div id="banBtn">
+                        <a href="#" class="banBtn">자세히 보기</a>
+                    </div>
+
+                </div>
+
+                <!-- 블릿 -->
+                <div class="bullet">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="on"></li>
+                    </ul>
+                </div>
+                <div class="stop">
+                    <a href="#">
+                        <img src="./images/icon_paused.png" alt="정지버튼">
+                    </a>
+                </div>
+                <!-- 배너이동버튼 -->
+
+                <a href="#" class="btn rb">
+                    <img src="./images/btn_next.png" alt="오른쪽버튼">
+                </a>
+                <a href="#" class="btm lb">
+                    <img src="./images/btn_prev.png" alt="왼쪽버튼">
+                </a>
+
+
+
+            </div>
+
+        </section>
+    </div>
+    <!-- 3.컨텐츠영역 -->
+    <!-- Mamonde Pick -->
+    <div id="mamondePick">
+        <div class="mamondePick">
+            <div class="pbx mp1 prt">
+                <!-- 3-1. Momonde Pick -->
+                <div class="titBox">
+                    <h2 class="tit">
+                        Mamonde Pick
+                    </h2>
+                    <span class="tit-desc">
+                        매일 찾게 되는 마몽드의 베스트 제품
+                    </span>
+                </div>
+                <div class="btn-area">
+                    <a href="#" class="btn-best">
+                        <span>Best</span>
+                    </a>
+                    <a href="#" class="btn-trend">
+                        <span>Trending</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pbx mp2 prt">
+                <!-- 3-2. contents -->
+                <div class="best-trend">
+                    <ul>
+                        <li>
+                            <span class="txtBox">
+                                <a href="#">
+                                    <strong class="tit">프로바이오틱스 세라마이드 크림</strong>
+                                    <span class="link">자세히 보기</span>
+                                </a>
+                            </span>
+                            <div class="imgBox">
+                                <a href="#">
+                                    <img src="images/final_main_pick_best01_pc.jpg" alt="프로바이오틱스 세라마이드 크림">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="txtBox">
+                                <a href="#">
+                                    <strong class="tit">로즈워터 토너</strong>
+                                    <span class="link">자세히 보기</span>
+                                </a>
+                            </span>
+                            <div class="imgBox">
+                                <a href="#">
+                                    <img src="images/img_best02_1.jpg" alt="로즈워터 토너">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="txtBox">
+                                <a href="#">
+                                    <strong class="tit">레드 에너지 리커버리 세럼</strong>
+                                    <span class="link">자세히 보기</span>
+                                </a>
+                            </span>
+                            <div class="imgBox">
+                                <a href="#">
+                                    <img src="images/img_best03_1.jpg" alt="레드 에너지 리커버리 세럼">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="txtBox">
+                                <a href="#">
+                                    <strong class="tit">블루 캐모마일 수딩 리페어 크림</strong>
+                                    <span class="link">자세히 보기</span>
+                                </a>
+                            </span>
+                            <div class="imgBox">
+                                <a href="#">
+                                    <img src="images/20210429_final_main_pick_best04_pc.jpg" alt="블루 캐모마일 수딩 리페어 크림">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mamonde Exclusive -->
+    <div id="mamondeEx">
+        <div class="mamondeEx prt">
+            
+            <div class="pbx mex1 prt">
+                <div class="titBox">
+                    <h2 class="tit">
+                        Mamonde Exclusive
+                    </h2>
+                    <span class="tit-desc">
+                        그냥 지나칠 수 없는 마몽드 탐구 영역
+                    </span>
+                </div><!-- .titBox -->
+            </div><!-- .pbx -->
+
+            <div class="pbx mex2 prt">
+                <ul>
+                    <!-- 1번 슬라이드 -->
+                    <li class="ex-slide">
+                        <div class="txtBox">
+                            <strong class="num">01</strong>
+                            <h3 class="sstit">마몽드 X O!Oi 콜라보</h3>
+                            <p class="sstit-desc">
+                                프로바이오틱스 크림 구매시
+                                <br>
+                                O!Oi 캠핑의자 100% 증정
+                            </p>
+                            <div class="more">
+                                <a href="#">
+                                    자세히보기
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="imgBox">
+                            <strong class="num">01</strong>
+                            <a href="#">
+                                <img src="images/20210610_final_oioi_main_exclusive-banner_pc.jpg"
+                                    alt="프로바이오틱스 O!Oi 콜라보">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="ex-slide">
+                        <!-- <div class="txtBox">
+                            <strong class="num">02</strong>
+                            <h3 class="sstit">NEW 헤어팡팡</h3>
+                            <p class="sstit-desc">
+                                역대급 업그레이드
+                                <br>
+                                스토어찜하고 최대 37% GO!
+                            </p>
+                            <div class="more">
+                                <a href="#">
+                                    자세히보기
+                                </a>
+                            </div>
+                        </div> -->
+
+                        <div class="imgBox2">
+                            <strong class="num">02</strong>
+                            <a href="#">
+                                <img src="images/20210312_main_exclusive-banner_Pang-Pang-Hair-Shadow_pc.jpg"
+                                    alt="New 헤어팡팡">
+                            </a>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div class="btnbx">
+                    <button class="btnL">
+                        <span class="ir">이전</span>
+                    </button>
+                    <button class="btnR">
+                        <span class="ir">다음</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mamonde Garden -->
+    <div id="mamondeGd">
+        <div class="mamondeGd prt">
+            <div class="pbx mgd1 prt">
+                <strong class="tit ir">Mamonde Garden</strong>
+                <div class="more">
+                    <a href="#">자세히 보기</a>
+                </div>
+            </div><!-- .mgd1 -->
+            <div class="pbx mgd2 prt">
+                <strong class="tit ir">Brand Story</strong>
+                <div class="more">
+                    <a href="#">자세히 보기</a>
+                </div>
+            </div><!-- .mgd2 -->
+        </div>
+    </div><!-- #mamondeGd -->
+
+    <!-- SNS -->
+    <div id="snsbx">
+        <div class="snsbx">
+            
+            <div class="pbx sns1 prt">
+                <h2 class="snstit">
+                    Blossoming Beauty with #Mamonde
+                </h2>
+
+            </div>
+            <div class="pbx sns2 prt">
+                <div class="instabx prt">
+                    <ul class="insta">
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns1.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns2.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns3.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns4.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns5.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns6.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns6.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns5.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns1.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sns1.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="controls">
+                        <button class="btn lbt"></button>
+                        <button class="btn rbt"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- #snsbx -->
+
+    <!-- 4.하단영역 -->
+    <div id="info">
+        <footer class="info prt">
+            <div class="pbx prt">
+                <!-- sns 박스 -->
+                <ul class="info1">
+                    <li class="facebook">
+                        <a href="#"></a>
+                    </li>
+                    <li class="instagram">
+                        <a href="#"></a>
+                    </li>
+                    <li class="youtube">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+                <!-- 회사 -->
+                <div class="info2 prt">
+                    <!-- 회사정보 -->
+                    <div class="company">
+                        <ul class="clist">
+                            <li>
+                                <a href="#">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="#">서비스이용약관</a>
+                            </li>
+                            <li>
+                                <a href="#">UGC 이용약관</a>
+                            </li>
+                            <li class="bd">
+                                <a href="#">개인정보처리방침</a>
+                            </li>
+                            <li>
+                                <a href="#">영상정보처리방침</a>
+                            </li>
+                            <li>
+                                <a href="#">뷰티포인트</a>
+                            </li>
+                        </ul>
+                        <div class="cinfo">
+                            고객서비스센터(수신자요금부담) 080-023-5454
+                            (월~금 : AM 09:00 ~ PM 06:00)
+                        </div>
+                        <div class="copyright">
+                            © AMOREPACIFIC CORPORATION. All rights reserved.
+                        </div>
+                        <a class="mark" href="#">
+                            <img src="./images/wa-mark.png" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)">
+                        </a>
+                    </div><!-- .company -->
+                </div><!-- .info2 -->
+                <!-- 언어변경박스 -->
+                <div class="language">
+                    <select name="language" id="language" title="언어 변경">
+                        <option value="kr/ko">한국 / 한국어</option>
+                        <option value="int/en">International / English</option>
+                        <option value="cn/zh">中国大陆/中文</option>
+                    </select>
+                </div><!-- .language -->
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- 그리드뷰 -->
+    <ul class="grid">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- 상단이동버튼 -->
+    <a href="#" id="goTop">
+        <span class="ir">화면 상단으로 이동</span>
+    </a>
+</body>
+
+</html>

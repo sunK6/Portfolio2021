@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* 탐앤탐스 공통 CSS - common.css */
+/* 공통 CSS 범위 : 상단영역, 하단영역(메인,서브공통) */
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+* {
+    font-family: Nunito Sans, NotoSansKR;
+    
+    font-size: 17px;
+    color: #401e20;
+}
+body *{
+    outline: 3px dashed blue;
+}
+
+/* 1. 상단영역 */
+#top{
+    z-index: 9999;
+}
+
+.top>.pbx{
+    height: 137px;
+}
+
+/* 1-1. 로고 */
+.logo{
+    margin-top: 11px;
+}
+
+/* 1-2. 공통메뉴 */
+.tmenu{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+}
+.tmenu li{
+    position: relative;
+    padding: 0 8px;
+}
+.tmenu li:last-child{
+    padding-right: 0;
+}
+.tmenu a{
+    font-family: KoPubWorld Dotum;
+    font-size: 14px;
+}
+.tmenu li+li::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 11px;
+    background-color: #c5c5c5;
+}
+
+/* 1-3. GNB 메뉴 */
+#gnb{
+    height: 68px;
+}
+.gnb{
+    margin-left: 40px;
+}
+.gnb>li{
+    position: relative;
+    padding: 0 23px;
+    z-index: 999;
+    
+}
+.gnb>li>a{
+    font-size: 18px;
+    line-height: 68px;
+    color: #401e20;
+    font-weight: 700;
+}
+
+/* GNB 서브메뉴 */
+.gnb_sub{
+    position: absolute;
+    left: 0;
+    width: 100px;
+    padding: 60px 25px 45px;
+    background-color: #fff;
+    box-shadow: 0 0 0.625em rgb(0 0 0 / 10%);
+    display: none;
+}
+.gnb_sub li{
+    float: none;
+    /* text-align: center; */
+}
+.gnb_sub a{
+    font-family: NotoSansKR;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    line-height: 37px;
+}
+
+/* 서브메뉴 개별배경 */
+.sbx1{
+    width: 52px;
+}
+.sbx2{
+    width: 125px;
+}
+.sbx3{
+    width: 152px;
+}
+.sbx4{
+    width: 609px;
+    left: -180px;
+}
+.sbx5{
+    width: 410px;
+    left: -75px;
+}
+.gnb_sub .sub{
+    width: 100%;
+}
+
+/* .sbx4 */
+.sbx4 li{
+    float: left;
+}
+.sbx4>ol>li{
+    padding: 0 30px;
+}
+.sbx4>ol>li:first-child{
+    padding-left: 20px;
+}
+.sbx4>ol>li:nth-child(2){
+    padding-left: 57px;
+}
+
+
+/* .sbx5 */
+.sbx5 li{
+    float: left;
+    width: 50%;
+}
+
+.gnb_sub2 li{
+    width: 100%;
+    float: none;
+}
+.gnb_sub2 li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.sub>li>a:hover,
+.gnb_sub2 a:hover{
+    text-decoration: underline;
+}

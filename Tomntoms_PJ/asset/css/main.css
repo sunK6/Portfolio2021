@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* 탐앤탐스 메인페이지 - main.css */
+
+/* 외부 CSS합치기 */
+@import url(gridSet.css);
+@import url(gridView.css);
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+
+/* 메인페이지(index.html)에만 나오는 요소 css */
+
+/* 2. 배너영역 */
+#ban{
+    position: relative;
+}
+.ban{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.ban>.pbx{
+    height: 800px;
+}
+
+/* 2-1.배너슬라이드 */
+.slide{
+    position: relative;
+    left: 0;
+    height: 800px;
+    overflow: hidden;
+}
+.slide,
+.slide.ul,
+.slide>ul>li{
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* outline: 6px dotted red; */
+}
+.slide>ul>li{
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+.slide>ul>li:nth-child(1) {
+    background-image: url(../images/1/slide1.jpg);
+}
+.slide>ul>li:nth-child(2) {
+    background-image: url(../images/1/slide2.jpg);
+}
+.slide>ul>li:nth-child(3) {
+    background-image: url(../images/1/slide3.jpg);
+}
+.slide>ul>li:nth-child(4) {
+    background-image: url(../images/1/slide4.jpg);
+}
+.slide>ul>li:nth-child(5) {
+    background-image: url(../images/1/slide5.jpg);
+}
+.slide>ul>li:nth-child(6) {
+    background-image: url(../images/1/slide6.jpg);
+}
+.slide>ul>li:nth-child(7) {
+    background-image: url(../images/1/slide7.jpg);
+}
+.slide>ul>li:nth-child(8) {
+    background-image: url(../images/1/slide8.jpg);
+}
+.slide>ul>li:nth-child(9) {
+    background-image: url(../images/1/slide9.jpg);
+}
+.slide>ul>li:nth-child(10) {
+    background-image: url(../images/1/slide10.png);
+}
+
+/* 2-2.블릿 */
+.indic{
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    z-index: 1;
+    width: 520px;
+    height: 40px;
+}
+
+/* 슬라이드이동버튼 */
+.sbtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    z-index: 1;
+}
+.lb{
+    left: 2%;
+    background-image: url(../images/1/menu_prev.png);
+}
+.rb{
+    right: 2%;
+    background-image: url(../images/1/menu_next.png);
+}
+
+/* 2-3.공지사항 */
+#notice{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #572a31;
+}
+.notice{
+    width: 1400px;
+    height: 70px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.notic{
+    display: flex;
+    flex-direction: column;
+    height: 300%;
+}
+.notic li{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 82px 0 60px;
+    box-sizing: border-box;
+}
+.notic .inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 0 45px 0 75px;
+    box-sizing: border-box;
+}
+.notic a{
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+}
+.txt-bx{
+    width: 419px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+.date-bx{
+    width: 90px;
+}
+.btn-bx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+/* 3. 탐앤탐스 메뉴 */
+.tomsmenu>.pbx{
+    height: 937px;
+}
+/* 3-1.타이틀 */
+.tit{
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 900;
+}
+/* 3-2.메뉴 */
+.menu{
+    height: 437px;
+    overflow: hidden;
+}
+.item img{
+    width: 437px;
+    height: 437px;
+}
