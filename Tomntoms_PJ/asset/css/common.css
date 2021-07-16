@@ -15,7 +15,7 @@ html,body{
     color: #401e20;
 }
 body *{
-    outline: 3px dashed blue;
+    /* outline: 3px dashed blue; */
 }
 
 /* 1. 상단영역 */
