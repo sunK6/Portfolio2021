@@ -8,6 +8,7 @@
     <title>TOM N TOMS</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
@@ -19,6 +20,7 @@
     <!-- 1. 상단영역(공통모듈) -->
     <div id="top">
         <header class="ibx top">
+            <div class="nav_bg"></div>
             <div class="pbx col-1">
                 <!-- 1-1. 로고 -->
                 <h1 class="logo">
@@ -156,15 +158,173 @@
                 </nav>
 
             </div>
+
         </header>
-    </div>
+
+        <!-- 모바일용 햄버거 버튼 -->
+        <div class="hamb">
+            <button type="button" class="ham">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </div>
+
+        <!-- 모바일용 스토어 -->
+        <div class="store">
+            <a href="#">
+                <img src="images/1/tomntoms_mall_i.png" alt="스토어">
+            </a>
+        </div>
+        
+
+        <!-- 모바일박스 -->
+        <div class="mobx">
+            <!-- 모바일용 로고 -->
+            <h1 class="mlogo">
+                <a href="index.html">
+                    <img src="images/1/nav_logo.svg" alt="logo">
+                </a>
+            </h1>
+            <!-- 닫기버튼 -->
+            <a href="#" class="close">
+                <img src="images/1/nav_btn_off.png" alt="닫기버튼">
+            </a>
+
+            <!-- 모바일용 GNB -->
+            <nav id="mgnb">
+                <ul class="mgnb">
+                    <!-- 1-3-1. 메뉴 -->
+                    <li>
+                        <a href="#">MENU</a>
+                        <div class="mgnb_sub msbx1">
+                            <ol class="msub">
+                                <li><a href="#">신메뉴</a></li>
+                                <li><a href="#">음료</a></li>
+                                <li><a href="#">푸드</a></li>
+                                <li><a href="#">MD</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <!-- 1-3-2. 이벤트 -->
+                    <li>
+                        <a href="#">EVENT</a>
+                    </li>
+                    <!-- 1-3-3. 스토어 -->
+                    <li>
+                        <a href="#">STORE</a>
+                        <div class="mgnb_sub msbx2">
+                            <ol class="msub">
+                                <li><a href="#">국내 매장 찾기</a></li>
+                                <li><a href="#">글로벌 매장 찾기</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <!-- 1-3-4. 서비스 -->
+                    <li>
+                        <a href="#">SERVICE</a>
+                        <div class="mgnb_sub msbx3">
+                            <ol class="msub">
+                                <li><a href="#">가맹점 개설문의</a></li>
+                                <li><a href="#">마이탐 멤버쉽</a></li>
+                                <li><a href="#">제휴할인/기프트카드</a></li>
+                                <li><a href="#">렌탈 서비스</a></li>
+                                <li><a href="#">탐스 라이프 스토어</a></li>
+                                <li><a href="#">아카데미</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <!-- 1-3-5. 커뮤니티 -->
+                    <li>
+                        <a href="#">COMMUNITY</a>
+                        <div class="mgnb_sub msbx4">
+                            <ol class="msub">
+                                <li>
+                                    <a href="#">예술문화활동</a>
+                                    <div class="mgnb_sub2">
+                                        <ul>
+                                            <li><a href="#">갤러리탐</a></li>
+                                            <li><a href="#">탐스테이지</a></li>
+                                            <li><a href="#">탐시어터</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">고객의 소리</a>
+                                    <div class="mgnb_sub2">
+                                        <ul>
+                                            <li><a href="#">공지사항</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">제휴 마케팅/단체구매 제안</a></li>
+                                            <li><a href="#">신규 입점제의</a></li>
+                                            <li><a href="#">마이탐 멤버쉽 이용안내</a></li>
+                                            <li><a href="#">1:1 문의하기</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">사회공헌활동</a>
+                                </li>
+                                <li>
+                                    <a href="#">온라인 커뮤니티</a>
+                                    <div class="mgnb_sub2">
+                                        <ul>
+                                            <li><a href="#">인스타그램</a></li>
+                                            <li><a href="#">블로그</a></li>
+                                            <li><a href="#">유튜브</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <!-- 1-3-6. 탐앤탐스소개 -->
+                    <li>
+                        <a href="#">TOM N TOMS</a>
+                        <div class="mgnb_sub msbx5">
+                            <ol class="msub">
+                                <li>
+                                    <a href="#">브랜드소개</a>
+                                    <div class="mgnb_sub2">
+                                        <ul>
+                                            <li><a href="#">TOM N TOMS</a></li>
+                                            <li><a href="#">Coffee & Pretzel</a></li>
+                                            <li><a href="#">Brand History</a></li>
+                                            <li><a href="#">Global TOM N TOMS</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">채용안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">찾아오시는 길</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 모바일용 공통메뉴 -->
+            <nav class="mo-tmenu">
+                <ul>
+                    <li><a href="#">ENGLISH</a></li>
+                    <li><a href="#">CHINESE</a></li>
+                </ul>
+            </nav>
+        </div><!-- .mobx -->
+
+    </div><!-- #top -->
 
     <!-- 2. 배너영역 -->
     <div id="ban">
         <!-- 2-1.배너슬라이드 -->
         <section class="slide">
             <ul>
-                <li><span class="ir">배너이미지1</span></li>
+                <li class="on"><span class="ir">배너이미지1</span></li>
                 <li><span class="ir">배너이미지2</span></li>
                 <li><span class="ir">배너이미지3</span></li>
                 <li><span class="ir">배너이미지4</span></li>
@@ -194,7 +354,7 @@
         </section>
         <!-- 2-3.공지사항 -->
         <section id="notice">
-            <div class="notice">
+            <div class="ibx notice">
                 <ol class="notic">
                     <li>
                         <div class="inner">
@@ -437,8 +597,13 @@
             <div class="pbx col-8">
                 <!-- 5-2.비디오박스 -->
                 <div class="vid-bx">
-                    <iframe width="100%" height="100%"
-                        src="https://www.youtube.com/embed/puxgxcs4J84?list=PLYH_ZU_CTxvsWkMLtA0gZHPdlznvQAIQu"
+                    <div class="vid_cover">
+
+                    </div>
+                    <button class="btn_play">
+
+                    </button>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fErdM4MjgBE"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -448,18 +613,17 @@
                 <!-- 5-3.비디오컨텐츠박스 -->
                 <div class="vid-cont">
                     <strong class="vid-tit">
-                        탐앤탐스 취향저격<br>
-                        빙수 3종 출시
+                        찜통더위를 날려줄🌤 <br>
+                        달콤한 아이스티 복숭아
                     </strong>
                     <p class="vid-stit">
-                        믿먹조합 흑당 & 팥 🍨옛날빙수 <br>
-                        쫀득쫀득 콘세상 🌽 옥수수빙수 <br>
-                        새콤달콤 망고 & 코코넛 젤리 🥭망고패션빙수
+                        새콤달콤한 복숭아에 잉글리쉬브랙퍼스트 홍차까지 <br>
+                        간편한 스틱타입으로 맛과 향을 모두 느껴보세요!
                     </p>
                     <ul class="vid-img">
                         <li>
                             <a href="#">
-                                <img src="./images/1/menu3.jpg" alt="빙수이미지">
+                                <img src="./images/1/videoimg.jpg" alt="아이스티이미지">
                             </a>
                         </li>
                         <li>
@@ -470,16 +634,159 @@
                     </ul>
                 </div>
             </div>
-           
+
         </div>
 
     </div><!-- #tomsmv -->
+
+    <!-- 6. SNS -->
+    <div id="tomsSns">
+        <div class="ibx tomsSns">
+            <div class="pbx col-12">
+                <!-- 6-1. 타이틀 -->
+                <h2 class="tit">
+                    <span># TOM N TOMS SNS</span>
+                </h2>
+                <div class="snsbx">
+                    <ul class="sns">
+                        <li>
+                            <a href="#">
+                                <img src="./images/1/sns1.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/1/sns2.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/1/sns3.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/1/sns4.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/1/sns5.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/1/sns6.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/1/sns7.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/1/sns8.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/1/sns9.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/1/sns10.jpg" alt="sns이미지">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. 하단영역 -->
+    <div id="tomsinfo">
+        <!-- 3-4.흐르는자막 -->
+        <div class="fcap">
+            <ol>
+                <li>SPECIAL TEA COFFEE</li>
+                <li>TOM N TOMS COFFEE</li>
+                <li>SPECIAL TEA COFFEE</li>
+            </ol>
+        </div>
+        <div class="ibg"></div>
+
+        <footer class="ibx info">
+            <!-- 가맹문의/회사주소 -->
+            <div class="pbx col-4 addbx">
+                <ul>
+                    <li>
+                        <a href="#">가맹문의</a>
+                    </li>
+                    <li>
+                        <a href="#">브랜드 소개</a>
+                    </li>
+                    <li>
+                        <a href="#">신규매장 소개</a>
+                    </li>
+                </ul>
+                <!-- <ul class="fnb">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">채용안내</a></li>
+                    <li><a href="#">프랜차이즈</a></li>
+                    <li><a href="#">계열사소개</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">고객만족센터</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">가맹점 전용 게시판</a></li>
+                </ul> -->
+                <address class="add">
+                    서울특별시 강남구 논현로 163길 10 베드로빌딩 2F (구 : 신사동 570-6) <br>
+                    대표 : 김도균 <br>
+                    사업자등록번호 : 215-86-65050 개인정보 책임자 : 이동규 <br>
+                    TEL. 02-3412-0781 FAX. 02-3412-1907
+                </address>
+            </div>
+            <!-- 로고 -->
+            <div class="pbx col-4 ilogo">
+                <a href="#">
+                    <img src="./images/1/logo.png" alt="로고이미지">
+                </a>
+                
+            </div>
+            <!-- sns -->
+            <div class="pbx col-4 snsbx">
+                <span>Follow us</span>
+                <ul class="sns-list">
+                    <li>
+                        <a href="#">
+                            <img src="./images/2/insta.png" alt="인스타그램">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/2/facebook.png" alt="페이스북">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/2/youtube.png" alt="유튜브">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </footer>
+        <div class="copy">COPYRIGHT ⓒ 2015 TOM N TOMS COFFEE. ALL RIGHTS RESERVED.</div>
+    </div><!-- #tomsinfo -->
 
 
 
 
     <!-- 그리드뷰 -->
-    <ul class="grid">
+    <!-- <ul class="grid">
         <li></li>
         <li></li>
         <li></li>
@@ -492,7 +799,7 @@
         <li></li>
         <li></li>
         <li></li>
-    </ul>
+    </ul> -->
 </body>
 
 </html>

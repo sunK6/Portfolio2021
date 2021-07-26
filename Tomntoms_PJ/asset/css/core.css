@@ -37,10 +37,21 @@
     font-weight: 900;
     src: url(../fonts/Montserrat-Black.woff);
 }
+@font-face {
+    font-family: Roboto;
+    font-weight: 100;
+    src: url(../fonts/Roboto-Thin.woff);
+}
+@font-face {
+    font-family: Roboto;
+    font-weight: 400;
+    src: url(../fonts/Roboto-Regular.woff);
+}
 
 /* 속박스 클래스 */
 .ibx{
     width: 1430px;
+    max-width: 100%;
     margin: 0 auto;
     /* outline: 2px dotted red; */
 }
