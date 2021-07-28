@@ -264,9 +264,17 @@ body *{
     display: block;
 }
 
+
+
 .mgnb li{
     float: none;
 }
+/* .mgnb li.on{
+    background-color: #572a31;
+}
+.mgnb li.on>a{
+    color: #fff;
+} */
 .mgnb>li>a{
     display: block;
     padding: 15px 41px 15px 15px;
@@ -337,47 +345,24 @@ body *{
 
 
 
-/* 7. 하단영역 */
+/************************ 7. 하단영역*********************** */
 #tomsinfo{
-    position: relative;
-    height: 100vh;
-    background: url(../images/1/section2_bg.jpg) no-repeat center/cover;
+    height: auto;
+    /* background: url(../images/1/section2_bg.jpg) no-repeat center/cover; */
 }
 .info{
-    position: relative;
-    height: 100%;
-}
-
-.info .pbx{
-    position: relative;
-    top: 66%;
-    height: 28%;
-    padding-top: 70px;
-    padding-bottom: 40px;
-}
-.bgimg{
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
+    background-color: #3b2120;
 }
-.bgimg img{
-    width: 100%;
-    height: 100%;
-}
-
 
 /* 흐르는 자막 */
 .fcap {
-    position: absolute;
-    top: 43%;
-    left: 0;
+    position: relative;
     width: 100%;
     /* outline: 2px dashed red; */
     overflow: hidden;
     /* 넘치는 자식요소 숨기기 */
-    background-color: rgba(255, 255, 255, 0.747);
+    background-color: #fff;
 
 }
 /* 움직일 박스 */
@@ -412,15 +397,20 @@ body *{
 }/* 키프레임 */
 
 
-.ibg{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 34%;
-    width: 100%;
-    background-color: #3b2120;
-}
 
+.foot_wr{
+    position: relative;
+    max-width: 1430px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 90px 0;
+
+}
+.foot_wr>div{
+    display: inline-block;
+    width: 33%;
+    vertical-align: middle;
+}
 .addbx li{
     margin-right: 20px;
 }
@@ -431,9 +421,15 @@ body *{
     font-size: 25px;
     color: #fff;
 }
+.mnb{
+    display: none;
+}
 .add{
     margin-top: 30px;
-    height: 115px;
+}
+.add span{
+    display: inline-block;
+    vertical-align: middle;
     font-family: "NotoSansKR";
     font-style: normal;
     letter-spacing: -.5px;
@@ -450,17 +446,7 @@ body *{
     width: 65px;
 }
 
-/* .fnb{
-    display: flex;
-    flex-wrap: wrap;
-    width: 420px;
-    height: 70px;
-}
-.fnb a{
-    font-size: 14px;
-    color: rgba(236, 236, 236, 0.7);
-    letter-spacing: -1px;
-} */
+
 
 .snsbx{
     text-align: right;
@@ -483,9 +469,6 @@ body *{
 
 
 .copy{
-    /* position: absolute; */
-    /* left: 0; */
-    /* bottom: 0; */
     width: 100%;
     height: 57px;
     line-height: 57px;

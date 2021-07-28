@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* 탐앤탐스 메인 미디어쿼리 - media.css */
 
-@media only screen and (max-width:1500px) {
+@media only screen and (max-width:1600px) {
     .mrb {
         right: 2%;
     }
@@ -38,6 +38,10 @@
     .vid-img li {
         width: 80px;
         height: 80px;
+    }
+
+    .fcap li {
+        font: bold 6vw/14vw"Montserrat";
     }
 
 
@@ -142,6 +146,86 @@
 
 
 
+    .foot_wr {
+        padding: 0 0 21px;
+    }
+
+    .foot_wr>div {
+        width: 100%;
+    }
+
+    .mnb {
+        display: block;
+    }
+
+    .addbx ul {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        /* display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap; */
+    }
+
+    .addbx li {
+        margin-right: 0;
+        position: relative;
+        /* margin-right: 27px; */
+    }
+
+    .addbx li+li::Before {
+        content: "";
+        display: block;
+        left: 0;
+        top: 50%;
+        margin-top: -5px;
+        height: 10px;
+        width: 1px;
+        background: #776463;
+        position: absolute;
+    }
+
+    .addbx a {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px 9px;
+        display: block;
+    }
+
+    .add {
+        border-top: 1px solid #776463;
+        text-align: center;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .add span {
+        font-size: 1.5vw;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .snsbx span {
+        display: none;
+    }
+
+
+    .snsbx {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .sns-list li {
+        margin: 7px;
+    }
+
+    .sns-list img {
+        width: 40px;
+    }
+
+
+
 }
 
 
@@ -195,7 +279,7 @@
     }
 
     .slide>ul>li:nth-child(10) {
-        background-image: url(../images/1/mo-slide10.jpg);
+        background-image: url(../images/1/mo-slide10.png);
     }
 
     .notice::before {
@@ -325,59 +409,69 @@
         display: none;
     }
 
-    .fcap li {
-        font: bold 8vw/39vw "Montserrat";
+
+
+    .ban>.pbx {
+        height: auto;
     }
 
-    .info>.pbx {
-        top: 60%;
-        width: 100%;
+    .tomsmenu>.pbx {
         height: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+    }
+
+    .tomsmp>.pbx {
+        height: auto;
+    }
+
+    .tomsv>.pbx {
+        height: auto;
+    }
+
+    .tomsSns>.pbx {
+        height: auto;
     }
 
     .addbx a {
         font-size: 13px;
-        padding: 20px 8px;
-        font-weight: 300;
-        color: #fff;
-    }
-    .add{
-        margin: 35px 35px 0;
-        font-size: 2.5vw;
-        color: #fff;
-        font-weight: 200;
-    }
-    .ibg{
-        height: 40%;
     }
 
-    .info .ilogo{
-        top: 55%;
+    .add {
+
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: left;
     }
 
-    .info .snsbx{
-        top: 57%;
-        margin-top: 0;
+    .add span {
+        font-size: 12px;
     }
 
-    .snsbx span{
-        display: none;
-    }
-    .snsbx{
-        text-align: center;
-    }
-    .sns-list li{
-        margin: 0 5px;
-    }
-    .sns-list img{
-        width: 8vw;
+    .addbx ul li:nth-child(1) {
+        /* margin-left: 14px; */
     }
 
-    .copy{
-        font-size: 2vw;
+    .addbx li {
+        margin-right: 0;
+        /* margin-right: 14px; */
     }
+
+    .snsbx {
+        margin-top: 23px;
+    }
+
+    .ilogo {
+        line-height: 70px;
+    }
+
+    .ilogo img {
+        width: 56px;
+    }
+
+    .copy {
+        font-size: 12px;
+    }
+
+
 }
 
 /* 미디어쿼리 */

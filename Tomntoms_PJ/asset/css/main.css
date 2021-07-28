@@ -32,6 +32,7 @@
     left: 0;
     /* height: 800px; */
     overflow: hidden;
+    /* display: none; */
 }
 .slide::before{
     content: '';
@@ -132,6 +133,7 @@
     height: 70px;
     background-color: #572a31;
     z-index: 1;
+    /* display: none; */
 }
 .notice{
     position: relative;
@@ -212,6 +214,7 @@
 .tomsmenu>.pbx{
     position: relative;
     height: 100vh;
+    /* display: none; */
 }
 /* 3-1.타이틀 */
 .tit{
@@ -316,6 +319,7 @@
 .tomsmp>.pbx{
     position: relative;
     height: 100vh;
+    /* display: none; */
 }
 /* 4-2.엠디픽 */
 .picks{
@@ -411,6 +415,7 @@
 }
 .tomsv>.pbx{
     float: left;
+    /* display: none; */
 }
 /* 비디오박스 */
 .vid-bx{
@@ -487,6 +492,7 @@
 }
 .tomsSns>.pbx{
     height: 100vh;
+    /* display: none; */
 }
 .sns{
     display: flex;

@@ -32,14 +32,40 @@ $(function () { /////// jQB /////////////////////////////
     // 서브메뉴전체 숨기기  //
     $(".mgnb_sub").hide();
 
+   
     // 상위 메뉴(.mgnb li) 클릭 시 하위메뉴 보이기(slideDown) //
     $(".mgnb li").click(function () {
-        
-        $(".mgnb_sub").slideToggle(400)
-            .siblings().find(".mgnb_sub").slideUp(400);
 
-    }); ///////////// click ///////////
 
+        ///// slideDown상태이면 css변경
+        if ($(".mgnb_sub", this).css("display") === "none") {
+          $(this).css({
+               backgroundColor: "#572a31"
+           });
+           $(this).children("a").css({
+               color: "#fff"
+           });
+       } /////////  if  //////////////
+       // 안보일때(slideUp상태일때)
+       else { 
+            // css지우기
+           $(this).attr("style", "");
+           $(this).children("a").attr("style", "");
+           
+       } ////////// else /////////////
+
+   $(".mgnb_sub", this).slideToggle(400)
+       // 부모로 올라가서 li다른 형제들
+       .parent().siblings()
+       // 속성에서 style지우고
+       .attr("style", "")
+       // 하위의 서브메뉴 접고
+       .find(".mgnb_sub").slideUp(400)
+       // 전에 있는 형제 a요소의 style 지운다!
+       .prev().attr("style", "");
+
+
+}); ///////////// click ///////////
 
 
 }); ////////////// jQB /////////////////////////////////
