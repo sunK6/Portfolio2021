@@ -432,7 +432,7 @@
     .add {
         padding: 20px;
         box-sizing: border-box;
-        text-align: left;
+        /* text-align: left; */
     }
 
     .add span {
