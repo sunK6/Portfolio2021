@@ -3,28 +3,32 @@
 /* 공통 CSS 범위 : 상단영역, 하단영역(메인,서브공통) */
 
 
-html,body{
+html,
+body {
     width: 100%;
     /* height: 100%; */
     /* overflow-x: hidden; */
 }
+
 * {
     font-family: Nunito Sans, NotoSansKR;
-    
+
     font-size: 17px;
     color: #401e20;
 }
-body{
+
+body {
     padding-top: 137px;
     box-sizing: border-box;
     /* overflow-y: hidden */
 }
-body *{
+
+body * {
     /* outline: 3px dashed blue; */
 }
 
 /* 1. 상단영역 */
-#top{
+#top {
     position: fixed;
     top: 0;
     width: 100%;
@@ -33,33 +37,37 @@ body *{
 }
 
 
-.top>.pbx{
+.top>.pbx {
     height: 137px;
 }
 
 /* 1-1. 로고 */
-.logo{
+.logo {
     margin-top: 11px;
 }
 
 /* 1-2. 공통메뉴 */
-.tmenu{
+.tmenu {
     display: flex;
     justify-content: flex-end;
     padding-top: 15px;
 }
-.tmenu li{
+
+.tmenu li {
     position: relative;
     padding: 0 8px;
 }
-.tmenu li:last-child{
+
+.tmenu li:last-child {
     padding-right: 0;
 }
-.tmenu a{
+
+.tmenu a {
     font-family: KoPubWorld Dotum;
     font-size: 14px;
 }
-.tmenu li+li::before{
+
+.tmenu li+li::before {
     content: '';
     display: block;
     position: absolute;
@@ -72,19 +80,22 @@ body *{
 }
 
 /* 1-3. GNB 메뉴 */
-#gnb{
+#gnb {
     height: 68px;
 }
-.gnb{
+
+.gnb {
     margin-left: 40px;
 }
-.gnb>li{
+
+.gnb>li {
     position: relative;
     padding: 0 23px;
     z-index: 999;
-    
+
 }
-.gnb>li>a{
+
+.gnb>li>a {
     font-size: 18px;
     line-height: 68px;
     color: #401e20;
@@ -92,7 +103,7 @@ body *{
 }
 
 /* GNB 서브메뉴 */
-.gnb_sub{
+.gnb_sub {
     position: absolute;
     left: 0;
     width: 100px;
@@ -101,11 +112,13 @@ body *{
     box-shadow: 0 0 0.625em rgb(0 0 0 / 10%);
     display: none;
 }
-.gnb_sub li{
+
+.gnb_sub li {
     float: none;
     /* text-align: center; */
 }
-.gnb_sub a{
+
+.gnb_sub a {
     font-family: NotoSansKR;
     font-size: 16px;
     font-weight: 600;
@@ -114,79 +127,89 @@ body *{
 }
 
 /* 서브메뉴 개별배경 */
-.sbx1{
+.sbx1 {
     width: 52px;
 }
-.sbx2{
+
+.sbx2 {
     width: 125px;
 }
-.sbx3{
+
+.sbx3 {
     width: 152px;
 }
-.sbx4{
+
+.sbx4 {
     width: 609px;
     left: -180px;
 }
-.sbx5{
+
+.sbx5 {
     width: 410px;
     left: -75px;
 }
-.gnb_sub .sub{
+
+.gnb_sub .sub {
     width: 100%;
 }
 
 /* .sbx4 */
-.sbx4 li{
+.sbx4 li {
     float: left;
 }
-.sbx4>ol>li{
+
+.sbx4>ol>li {
     padding: 0 30px;
 }
-.sbx4>ol>li:first-child{
+
+.sbx4>ol>li:first-child {
     padding-left: 20px;
 }
-.sbx4>ol>li:nth-child(2){
+
+.sbx4>ol>li:nth-child(2) {
     padding-left: 57px;
 }
 
 
 /* .sbx5 */
-.sbx5 li{
+.sbx5 li {
     float: left;
     width: 50%;
 }
 
-.gnb_sub2 li{
+.gnb_sub2 li {
     width: 100%;
     float: none;
 }
-.gnb_sub2 li a{
+
+.gnb_sub2 li a {
     font-size: 14px;
     font-weight: 400;
     color: #666;
 }
 
 .sub>li>a:hover,
-.gnb_sub2 a:hover{
+.gnb_sub2 a:hover {
     text-decoration: underline;
 }
 
-.nav_bg{
+.nav_bg {
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 10;
     display: none;
 }
-.nav_bg.on{
+
+.nav_bg.on {
     display: block;
 }
 
 
 /* 모바일용 햄버거 버튼 */
-.hamb{
+.hamb {
     position: absolute;
     top: 13px;
     left: 15px;
@@ -195,14 +218,15 @@ body *{
     display: none;
 }
 
-.ham{
+.ham {
     margin: 0;
     padding: 0;
     background: transparent;
     border: none;
     cursor: pointer;
 }
-.ham .line{
+
+.ham .line {
     width: 17.5px;
     height: 1px;
     background-color: #373737;
@@ -210,23 +234,26 @@ body *{
     margin: 8px 0;
 
 }
-.ham .line:first-child, .ham .line:last-child{
+
+.ham .line:first-child,
+.ham .line:last-child {
     width: 26px;
 }
 
 /* 모바일용 스토어 */
-.store{
+.store {
     position: absolute;
     top: 15px;
     right: 15px;
     display: none;
 }
-.store img{
+
+.store img {
     width: 24px;
 }
 
 /* 모바일용 메뉴 */
-.mobx{
+.mobx {
     position: fixed;
     top: 0;
     left: -100%;
@@ -238,44 +265,48 @@ body *{
 
     /* display: none; */
 }
-.mobx.on{
+
+.mobx.on {
     left: 0;
     transition: 0.5s;
 }
 
-.close{
+.close {
     position: absolute;
     top: 18px;
     right: -35px;
     color: #666;
 }
-.close img{
+
+.close img {
     width: 22px;
 }
 
 
-.mlogo{
+.mlogo {
     width: 60%;
     margin: 0 auto;
     padding: 25px 0;
 }
-.mlogo img{
+
+.mlogo img {
     width: 100%;
     display: block;
 }
 
 
 
-.mgnb li{
+.mgnb li {
     float: none;
 }
+
 /* .mgnb li.on{
     background-color: #572a31;
 }
 .mgnb li.on>a{
     color: #fff;
 } */
-.mgnb>li>a{
+.mgnb>li>a {
     display: block;
     padding: 15px 41px 15px 15px;
     font-size: 16px;
@@ -287,20 +318,24 @@ body *{
     background-repeat: no-repeat;
     background-size: 14px auto;
 }
-.mgnb>li:first-child{
+
+.mgnb>li:first-child {
     border-top: 1px solid #dadada;
 }
-.mgnb>li:nth-child(2)>a{
+
+.mgnb>li:nth-child(2)>a {
     background-image: none;
 }
 
-.msub li{
+.msub li {
     border-bottom: 1px solid #eee;
 }
-.msub li:last-child{
+
+.msub li:last-child {
     border-bottom: none;
 }
-.msub a{
+
+.msub a {
     display: block;
     padding: 11px 0 11px 30px;
     font-family: "NotoSansKR", sans-serif;
@@ -311,18 +346,21 @@ body *{
 }
 
 
-.mo-tmenu{
+.mo-tmenu {
     margin-top: 19px;
 }
-.mo-tmenu ul{
+
+.mo-tmenu ul {
     display: flex;
     justify-content: center;
 }
-.mo-tmenu li{
+
+.mo-tmenu li {
     position: relative;
     padding: 0 9px;
 }
-.mo-tmenu li+li::before{
+
+.mo-tmenu li+li::before {
     content: '';
     display: block;
     position: absolute;
@@ -333,7 +371,8 @@ body *{
     height: 10px;
     background-color: #ccc;
 }
-.mo-tmenu a{
+
+.mo-tmenu a {
     font-family: "NotoSansKR", sans-serif;
     font-weight: 400;
     font-size: 13px;
@@ -346,11 +385,12 @@ body *{
 
 
 /************************ 7. 하단영역*********************** */
-#tomsinfo{
+#tomsinfo {
     height: auto;
     /* background: url(../images/1/section2_bg.jpg) no-repeat center/cover; */
 }
-.info{
+
+.info {
     width: 100%;
     background-color: #3b2120;
 }
@@ -365,6 +405,7 @@ body *{
     background-color: #fff;
 
 }
+
 /* 움직일 박스 */
 .fcap ol {
     position: relative;
@@ -379,6 +420,7 @@ body *{
     /* 애니메이션 */
     animation: fcap 26s linear infinite;
 }
+
 .fcap li {
     float: left;
     width: 33.33%;
@@ -387,18 +429,21 @@ body *{
     font: bold 100px/235px "Montserrat";
     color: #401e20;
     text-shadow: 1px 1px 1px #000;
-    
+
 }
+
 /* 흐르는 글자 키프레임 */
 @keyframes fcap {
     to {
         left: -200%;
     }
-}/* 키프레임 */
+}
+
+/* 키프레임 */
 
 
 
-.foot_wr{
+.foot_wr {
     position: relative;
     max-width: 1430px;
     margin: 0 auto;
@@ -406,52 +451,59 @@ body *{
     padding: 90px 0;
 
 }
-.foot_wr>div{
+
+.foot_wr>div {
     display: inline-block;
     width: 33%;
     vertical-align: middle;
 }
-.addbx li{
+
+.addbx li {
     margin-right: 20px;
 }
-.addbx a{
+
+.addbx a {
     font-family: "NotoSansKR";
     letter-spacing: -.5px;
     font-weight: bold;
     font-size: 25px;
     color: #fff;
 }
-.mnb{
+
+.mnb {
     display: none;
 }
 
-.add{
-    /* margin-top: 30px; */
-    /* display: inline-block; */
+
+.add span {
+    display: inline-block;
     vertical-align: middle;
     font-family: "NotoSansKR";
     font-style: normal;
     letter-spacing: -.5px;
     font-size: 15px;
     color: rgba(236, 236, 236, 0.7);
-    text-rendering:optimizeSpeed;
+    text-rendering: optimizeSpeed;
 }
 
-.ilogo{
+
+.ilogo {
     display: inline-block;
     text-align: center;
     line-height: 100px;
 }
-.ilogo img{
+
+.ilogo img {
     width: 65px;
 }
 
 
 
-.snsbx{
+.snsbx {
     text-align: right;
 }
-.snsbx span{
+
+.snsbx span {
     vertical-align: 18px;
     margin-right: 30px;
     font-family: 'Roboto', serif;
@@ -459,16 +511,17 @@ body *{
     letter-spacing: -.5px;
 }
 
-.sns-list{
+.sns-list {
     display: inline-block;
 }
-.sns-list li{
+
+.sns-list li {
     margin-right: 20px;
 }
 
 
 
-.copy{
+.copy {
     width: 100%;
     height: 57px;
     line-height: 57px;
