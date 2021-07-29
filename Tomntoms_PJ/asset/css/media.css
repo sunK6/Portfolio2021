@@ -226,9 +226,6 @@
 /* 모바일 미디어쿼리 */
 @media only screen and (max-width:700px) {
 
-    .min{
-        display: inline;
-    }
     .ibx {
         width: 100vw;
         overflow-x: hidden;
