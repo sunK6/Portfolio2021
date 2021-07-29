@@ -429,7 +429,7 @@ body *{
 }
 .add span{
     text-align: left;
-    display: inline-block;
+    display: block;
     font-family: "NotoSansKR";
     font-style: normal;
     letter-spacing: -.5px;
