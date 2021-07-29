@@ -44,8 +44,8 @@
         font: bold 6vw/14vw"Montserrat";
     }
 
+}/* 미디어쿼리 */
 
-}
 
 @media only screen and (max-width:1024px) {
 
@@ -159,50 +159,46 @@
     }
 
     .addbx ul {
-        display: inline-block;
         position: relative;
+        display: inline-block;
         left: 50%;
         transform: translateX(-50%);
-        /* display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap; */
     }
 
     .addbx li {
-        margin-right: 0;
         position: relative;
-        /* margin-right: 27px; */
+        margin-right: 0;
     }
 
     .addbx li+li::Before {
-        content: "";
+        content: '';
         display: block;
-        left: 0;
+        position: absolute;
         top: 50%;
-        margin-top: -5px;
+        left: 0;
         height: 10px;
         width: 1px;
+        margin-top: -5px;
         background: #776463;
-        position: absolute;
     }
 
     .addbx a {
+        display: block;
         font-size: 16px;
         font-weight: 600;
         padding: 20px 9px;
-        display: block;
     }
 
     .add {
-        border-top: 1px solid #776463;
         text-align: center;
-        padding: 20px;
+        padding: 25px;
         margin-top: 0;
+        border-top: 1px solid #776463;
     }
 
     .add span {
-        font-size: 1.5vw;
-        font-weight: 300;
+        font-size: 14px;
+        font-weight: 200;
         color: #fff;
     }
 
@@ -224,9 +220,7 @@
         width: 40px;
     }
 
-
-
-}
+}/* 미디어쿼리 */
 
 
 /* 모바일 미디어쿼리 */
@@ -446,15 +440,6 @@
         font-size: 12px;
     }
 
-    .addbx ul li:nth-child(1) {
-        /* margin-left: 14px; */
-    }
-
-    .addbx li {
-        margin-right: 0;
-        /* margin-right: 14px; */
-    }
-
     .snsbx {
         margin-top: 23px;
     }
@@ -469,8 +454,8 @@
 
     .copy {
         font-size: 12px;
+        letter-spacing: -1px;
     }
-
 
 }
 
