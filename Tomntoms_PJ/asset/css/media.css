@@ -44,7 +44,9 @@
         font: bold 6vw/14vw"Montserrat";
     }
 
-}/* 미디어쿼리 */
+}
+
+/* 미디어쿼리 */
 
 
 @media only screen and (max-width:1024px) {
@@ -157,13 +159,15 @@
     .mnb {
         display: block;
     }
+
     .addbx {}
+
     .addbx ul {
         position: relative;
         display: inline-block;
         left: 50%;
         transform: translateX(-50%);
-        
+
         width: 100%;
         font-size: 0;
         white-space: nowrap;
@@ -173,14 +177,18 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
-    .addbx ul::-webkit-scrollbar {display: none;}
-    
+
+    .addbx ul::-webkit-scrollbar {
+        display: none;
+    }
+
     .addbx li {
         display: inline-block;
         float: none;
-        
+
         vertical-align: top;
     }
+
     /*
     .addbx li {
         position: relative;
@@ -237,7 +245,9 @@
         width: 40px;
     }
 
-}/* 미디어쿼리 */
+}
+
+/* 미디어쿼리 */
 
 
 /* 모바일 미디어쿼리 */
@@ -319,6 +329,9 @@
         width: 720px;
         margin: 10px 52px;
     }
+    .mbtn{
+        top: 56%;
+    }
 
 
     .md {
@@ -334,22 +347,22 @@
         width: 17.6%;
     }
 
-    .pick img {
-        margin-top: 20px;
-    }
-
+    
     .pick:hover {
         transform: none;
     }
-
+    
     .pick:hover img {
         transform: none;
     }
-
+    
     .mtitbx {
-        height: 120px;
+        height: 90px;
         opacity: 1;
-        bottom: 26%;
+        bottom: 36%;
+    }
+    .mtitbx img {
+        margin-top: 20px;
     }
 
     .mtit {
@@ -360,6 +373,8 @@
     .mtitbx img {
         bottom: 0;
         opacity: 1;
+        width: 22px;
+        height: 10px;
     }
 
     .pick:hover .mtitbx {
@@ -375,7 +390,7 @@
     }
 
     .vid-bx {
-        height: 420px;
+        height: 200px;
         margin-top: 5px;
     }
 
@@ -408,6 +423,7 @@
 
     .snsbx {
         margin-top: 60px;
+        margin-bottom: 40px;
     }
 
     .sns li {
@@ -418,6 +434,13 @@
 
     .sns li:last-child {
         display: none;
+    }
+
+    .sns li::before,
+    .sns li::after,
+    .sns li a::before,
+    .sns li a::after {
+       display: none;
     }
 
 
