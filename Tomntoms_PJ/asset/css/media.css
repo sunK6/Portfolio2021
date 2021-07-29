@@ -157,14 +157,31 @@
     .mnb {
         display: block;
     }
-
+    .addbx {}
     .addbx ul {
         position: relative;
         display: inline-block;
         left: 50%;
         transform: translateX(-50%);
+        
+        width: 100%;
+        font-size: 0;
+        white-space: nowrap;
+        overflow-x: auto;
+        transform: none;
+        left: 0;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
-
+    .addbx ul::-webkit-scrollbar {display: none;}
+    
+    .addbx li {
+        display: inline-block;
+        float: none;
+        
+        vertical-align: top;
+    }
+    /*
     .addbx li {
         position: relative;
         margin-right: 0;
@@ -181,7 +198,7 @@
         margin-top: -5px;
         background: #776463;
     }
-
+    */
     .addbx a {
         display: block;
         font-size: 16px;
@@ -190,7 +207,7 @@
     }
 
     .add {
-        /* text-align: center; */
+        text-align: center;
         padding: 25px;
         margin-top: 0;
         border-top: 1px solid #776463;
@@ -430,9 +447,10 @@
     }
 
     .add {
+
         padding: 20px;
         box-sizing: border-box;
-        /* text-align: left; */
+        text-align: left;
     }
 
     .add span {
