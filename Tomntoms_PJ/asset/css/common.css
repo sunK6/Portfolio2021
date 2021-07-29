@@ -451,6 +451,7 @@ body *{
     text-align: right;
 }
 .snsbx span{
+    text-align: left;
     vertical-align: 18px;
     margin-right: 30px;
     font-family: 'Roboto', serif;
