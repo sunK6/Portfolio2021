@@ -428,13 +428,14 @@ body *{
     margin-top: 30px;
 }
 .add span{
-    text-align: left;
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
     font-family: "NotoSansKR";
     font-style: normal;
     letter-spacing: -.5px;
     font-size: 15px;
     color: rgba(236, 236, 236, 0.7);
+    text-rendering:optimizeSpeed;
 }
 
 .ilogo{
