@@ -189,14 +189,12 @@
         padding: 20px 9px;
     }
 
-    .add {
+    
+    .add  {
         text-align: center;
         padding: 25px;
         margin-top: 0;
         border-top: 1px solid #776463;
-    }
-
-    .add span {
         font-size: 14px;
         font-weight: 200;
         color: #fff;
@@ -434,11 +432,9 @@
         padding: 20px;
         box-sizing: border-box;
         text-align: left;
-    }
-
-    .add span {
         font-size: 12px;
     }
+
 
     .snsbx {
         margin-top: 23px;

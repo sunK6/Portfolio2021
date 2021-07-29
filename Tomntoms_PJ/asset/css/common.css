@@ -424,10 +424,9 @@ body *{
 .mnb{
     display: none;
 }
+
 .add{
     margin-top: 30px;
-}
-.add span{
     display: inline-block;
     vertical-align: middle;
     font-family: "NotoSansKR";
