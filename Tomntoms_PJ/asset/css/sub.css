@@ -422,12 +422,6 @@
     width: 840px;
     height: 566px;
 }
-.ifr{
-    height: 100%;
-}
-.ifr iframe{
-    border: none;
-}
 .vid_cover{
     position: absolute;
     width: 100%;
@@ -448,7 +442,6 @@
     background: url(../images/2/btn_play.png) no-repeat center center/100%;
 
     border: none;
-    cursor: pointer;
 }
 /* 비디오컨텐츠 */
 .vid-cont{

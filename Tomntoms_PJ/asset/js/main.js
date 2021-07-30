@@ -3,6 +3,33 @@
 // 제이쿼리 코드블록1 : 메인배너 ///////////////////////////////////////
 $(function(){ // jQB1 ///////////////////////////////////////////////
 
+    let chgVid = seq => {
+        $(".vid_cover").fadeOut(300);
+        $(".btn_play").fadeOut(300);
+
+        let url='<iframe width="100%" height="100%" src="https://www.youtube.com/embed/fErdM4MjgBE?autoplay=1" allow="autoplay"></iframe>';
+
+        if(seq) url='<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TBP18nabm4Y?autoplay=1" allow="autoplay"></iframe>';
+        
+
+        $(".ifr").html(url);
+    };//////// chgVid //////////
+
+
+    $(".btn_play").click(function(){
+        chgVid(0);
+    }); ////////// click ///////////
+
+
+    $(".vid-img a").click(function(e){
+        e.preventDefault();
+
+        let idx = $(this).parent().index();
+        console.log(idx);
+
+        chgVid(idx);
+    });//////////// clcik ///////////
+
     // 1. 메인배너 기능구현 ////
     // 대상1: 슬라이드박스 .slide li
     var sld = $(".slide li");
@@ -213,10 +240,7 @@ $(function(){ // jQB1 ///////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
 
 $(function(){ ////////// jQB2 //////////////////////////////
-    $(".mtab li").click(function(){
-        $(this).addClass("on")
-        .siblings().removeClass("on");
-    }); /////// click /////////////////
+
 
     
 

@@ -447,7 +447,7 @@
 
 
 
-    /* .ban>.pbx {
+    .ban>.pbx {
         height: calc(100vh - 60px);
     }
 
@@ -465,7 +465,7 @@
 
     .tomsSns>.pbx {
         height: calc(100vh - 60px);
-    } */
+    }
 
     .addbx a {
         font-size: 13px;
