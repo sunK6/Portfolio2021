@@ -2,98 +2,69 @@
 
 ///// 각 서브별 데이터 셋팅하기 /////
 let sinfo = {
-    "fashion": {
-        "제목": "Fashion",
-        "메뉴": ["전체", "트렌드", "아이템", "피플", "화보"],
-        "경로": "fashion",
-        "타이틀": [
-            "&lt;고양이를 부탁해&gt;의 20주년 기획전",
-            "패션계에서 가장 주목받는 신인 디자이너, 자크무스",
-            "서울국제여성영화제 장편 경쟁 한국 영화 4편",
-            "드라마 &lt;알고 있지만&gt;의 나비가 유행이라고?",
-            "홍콩 누아르 영화 주인공으로 변신한 민주",
-            "MSG워너비여, 영원하라!"
-        ]
+    "menu": {
+        "제목": "MENU",
+        // "메뉴": ["전체", "트렌드", "아이템", "피플", "화보"],
+        "경로": "menu"
+        
     },
-    "beauty": {
-        "제목": "Beauty",
-        "메뉴": ["전체", "트렌드", "아이템", "헬스", "피플"],
-        "경로": "beauty",
-        "타이틀": [
-            "매실의 놀라운 효능",
-            "맥시멀 뷰티의 신세계",
-            "브라렛보다 니플 패치?",
-            "지금 고쳐야 할 샤워 습관 6",
-            "‘급찐살’ 저격! 셀럽들의 비건 식단",
-            "팝한 여름 헤어 액세서리 활용법"
-        ]
+    "EVENT": {
+        "제목": "EVENT",
+        // "메뉴": ["전체", "트렌드", "아이템", "헬스", "피플"],
+        "경로": "EVENT"
+        
     },
-    "living": {
-        "제목": "Living",
-        "메뉴": ["전체", "여행", "음식", "문화", "인테리어", "키즈", "테크"],
-        "경로": "living",
-        "타이틀": [
-            "파리에 도버 스트리트 ‘리틀’ 마켓이 오픈했다",
-            "전망 좋은 홈 오피스",
-            "랜선 눈꽃 여행",
-            "2021년 새 계절을 위한 새것 모음",
-            "눈 호강 제대로, 뉴 호텔 5",
-            "고요한 겨울, 호캉스"
-        ]
+    "store": {
+        "제목": "STORE",
+        // "메뉴": ["전체", "여행", "음식", "문화", "인테리어", "키즈", "테크"],
+        "경로": "store"
     },
-    "people": {
-        "제목": "People",
-        "메뉴": "없음",
-        "경로": "people",
-        "타이틀": [
-            "아르마니의 시간, 아르마니의 약속",
-            "슈퍼모델 나오미 캠벨의 그림 같은 빌라",
-            "가구와 오브제를 창조하는 젊은 디자이너 6인",
-            "지지와 벨라의 엄마, 욜란다가 말하는 ‘라임병’",
-            "성별 고정관념을 깨는 파격 캐스팅",
-            "멋쟁이 엄마를 소개합니다"
-        ]
+    "service": {
+        "제목": "SERVICE",
+        // "메뉴": "없음",
+        "경로": "service"
     },
-    "video": {
-        "제목": "Video",
-        "메뉴": "없음",
-        "경로": "video",
-        "타이틀": [
-            "발렌시아가의 50th 꾸뛰르 컬렉션 라이브 스트리밍",
-            "뉴욕 패션 위크에 소개된 한국 디자이너 브랜드",
-            "에디터 제니가 선택한 주얼리는?",
-            "디올 FALL-WINTER 2021-2022 레디 투 웨어 컬렉션 라이브 스트리밍",
-            "프라다 2021 F/W 시즌 여성복 컬렉션 라이브 스트리밍",
-            "발렌시아가 SUMMER 21 (PRE-COLLECTION)"
-        ]
+    "community": {
+        "제목": "COMMUNITY",
+        // "메뉴": "없음",
+        "경로": "community"
     },
-    "runway": {
-        "제목": "Runway",
-        "메뉴": "없음",
-        "경로": "runway",
-        "타이틀": [
-            "<small>Ready To Wear 2021 F/W</small><br>Rick Owens",
-            "<small>Ready To Wear 2021 F/W</small><br>We11done",
-            "<small>Ready To Wear 2021 F/W</small><br>Comme des Garçons",
-            "<small>Ready To Wear 2021 F/W</small><br>Chloé",
-            "<small>Ready To Wear 2021 F/W</small><br>Balmain",
-            "<small>Ready To Wear 2021 F/W</small><br>Loewe"
-        ]
-    },
-    "shopping": {
-        "제목": "Shopping",
-        "메뉴": ["전체", "패션", "뷰티", "리빙"],
-        "경로": "shopping",
-        "타이틀": [
-            "여름과 찰떡궁합! 세라믹 바구니",
-            "사용할수록 매력적인 테크 제품",
-            "취향 있는 플랜터",
-            "감사의 마음을 담은, 부모님을 위한 선물",
-            "성년을 위한 선물",
-            "작고 소중한 아이들을 위한 선물"
-        ]
+    "tom n toms": {
+        "제목": "TOM N TOMS",
+        // "메뉴": "없음",
+        "경로": "tom n toms"
     }
 }; ////////// sinfo ////////////////
+
+let smenu = {
+    "푸드":
+    [{"ktit":'스크램블 에그 샌드위치<span class="new">NEW</span>',"etit":"scrambled egg sandwich"},
+    {"ktit":'스크램블 에그 프렌치 토스트<span class="new">NEW</span>',"etit":"Scrambled Egg French Toast"},
+    {"ktit":'플레인 크로플<span class="new">NEW</span>',"etit":"Plain Croiffle"},
+    {"ktit":'아이스크림 크로플<span class="new">NEW</span>',"etit":"Ice cream croiffle"},
+    {"ktit":'다크초코 크로플<span class="new">NEW</span>',"etit":"Dark Chocolate Croiffle"},
+    {"ktit":'블루베리 크림치즈 크로플<span class="new">NEW</span>',"etit":"Blueberry Cream Cheese Croiffle"},
+    {"ktit":'딸기 크림치즈 크로플<span class="new">NEW</span>',"etit":"Strawberry Cream Cheese Croiffle"},
+    {"ktit":'트로피칼 샤베트 빙수',"etit":"Tropical Sherbet ice flakes"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"},
+    {"ktit":'블루파인 샤베트<span class="new">NEW</span>',"etit":"Blue fine Sherbet"}],
+
+    "음료":[]
+};//////////// smenu /////////////
 
 
 
@@ -125,67 +96,96 @@ $(function () { // jQB ///////////////////////////////
 
     // 1. 제목넣기
     $(".stit").text(sinfo[pm]["제목"]);
-    // "runway" 일 경우 배경넣기
-    if (pm === "runway") {
-        $(".stit").css({
-            background: "url(images/bg_02.jpg) no-repeat center/cover",
-            color: "#fff"
-        }); ////// css //////////
-    } //////// if ///////////////
+   
 
     // 2. LNB 넣기
-    let lnb = sinfo[pm]["메뉴"]; // 배열값
-    console.log(lnb !== "없음");
-    // 메뉴가 "없음"이 아닐때 셋팅함
-    if (lnb !== "없음") {
+    // let lnb = sinfo[pm]["메뉴"]; // 배열값
+    // console.log(lnb !== "없음");
+    // // 메뉴가 "없음"이 아닐때 셋팅함
+    // if (lnb !== "없음") {
 
-        // 메뉴 html만들기
-        let mht = "";
-        mht += '<ul>';
-        // 메뉴배열값 만큼 돌기 -> for of문!
-        for (let x of lnb) {
+    //     // 메뉴 html만들기
+    //     let mht = "";
+    //     mht += '<ul>';
+    //     // 메뉴배열값 만큼 돌기 -> for of문!
+    //     for (let x of lnb) {
 
-            mht += '<li><a href="#">' + x + '</a></li>';
+    //         mht += '<li><a href="#">' + x + '</a></li>';
 
-        } //////// for of 문 ///////////
-        mht += '</ul>';
+    //     } //////// for of 문 ///////////
+    //     mht += '</ul>';
 
-        // console.log(mht);
+    //     // console.log(mht);
 
-        // LNB메뉴 박스요소에 html넣기
-        $(".lnb").html(mht);
+    //     // LNB메뉴 박스요소에 html넣기
+    //     $(".lnb").html(mht);
 
 
-    } ////////////////// if ////////////////////////
+    // } ////////////////// if ////////////////////////
 
     // 3. 컨텐츠 박스 배경이미지 넣기
     // 대상: .pbx
     // 사용메서드: each()
-    $(".pbx").each(function (idx, ele) {
+    // $(".pbx").each(function (idx, ele) {
 
-        // console.log(idx);
+    //     // console.log(idx);
 
 
-        // 이미지이름의 번호만들기 변수
-        let n1 = 1; // 앞순서 3개는 1
-        if (idx >= 3) n1 = 2; // 뒷순서 3개는 2로 변경!
-        let n2 = idx + 1; // 앞순서 3개는 순서대로 1,2,3
-        if (idx >= 3) n2 = idx - 2; // 뒷순서도 1,2,3만들기4
+    //     // 이미지이름의 번호만들기 변수
+    //     let n1 = 1; // 앞순서 3개는 1
+    //     if (idx >= 3) n1 = 2; // 뒷순서 3개는 2로 변경!
+    //     let n2 = idx + 1; // 앞순서 3개는 순서대로 1,2,3
+    //     if (idx >= 3) n2 = idx - 2; // 뒷순서도 1,2,3만들기4
 
-        console.log("cont" + n1 + "-" + n2 + "a.jpg");
+    //     console.log("cont" + n1 + "-" + n2 + "a.jpg");
 
-        ///////// 각 박스요소에 배경넣기 //////////////
-        // ele 변수는 this 키워드와 같음!
-        $(ele).css({
-            backgroundImage: "url(images/" +
-                sinfo[pm]["경로"] +
-                "/cont" + n1 + "-" + n2 + "a.jpg)"
-        }); /////////// css /////////////
+    //     ///////// 각 박스요소에 배경넣기 //////////////
+    //     // ele 변수는 this 키워드와 같음!
+    //     $(ele).css({
+    //         backgroundImage: "url(images/" +
+    //             sinfo[pm]["경로"] +
+    //             "/cont" + n1 + "-" + n2 + "a.jpg)"
+    //     }); /////////// css /////////////
 
-        // 4. 컨텐츠박스에 타이틀 넣기
-        $(ele).find("h2").html(sinfo[pm]["타이틀"][idx]);
+    //     // 4. 컨텐츠박스에 타이틀 넣기
+    //     $(ele).find("h2").html(sinfo[pm]["타이틀"][idx]);
 
-    }); ////////////// each ////////////////////
+    // }); ////////////// each ////////////////////
+
+
+    $(".menu-list").each(function(idx,ele){
+        // console.log("순번"+idx);
+        $(ele).find("a")
+        .prepend('<img src="images/1/bev/'+(idx+1)+'.jpg" alt="메뉴">');
+    }); /////////// each /////////////////
+
+    $(".mtab a").click(function(e){
+        e.preventDefault();
+
+        let txt = $(this).text();
+        console.log(txt);
+
+        if(txt=="푸드"){
+            $(".menu-list").each(function(idx,ele){
+                // console.log("순번"+idx);
+                $(ele).find("a>img")
+                .attr("src","images/1/food/"+(idx+1)+".jpg");
+
+                $(ele).find(".txt").html(smenu[txt][idx]["ktit"]);
+                $(ele).find(".s-txt").text(smenu[txt][idx]["etit"]);
+
+
+
+
+
+
+
+
+            }); /////////// each /////////////////
+        
+        } //////// if ////////////
+
+    }); ///////////// click /////////////////
 
 
 }); ////////////// jQB ////////////////////////////

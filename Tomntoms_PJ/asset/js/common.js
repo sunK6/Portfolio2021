@@ -1,4 +1,29 @@
 $(function () { /////// jQB /////////////////////////////
+    // scroll
+    function scrollHeader(){
+        var sct = $(window).scrollTop(); 
+
+        if(sct == 0){
+            $('body').removeClass('header--on');
+        }else{
+            $('body').addClass('header--on');
+        }
+
+        $(window).on('scroll', function(){
+            var sct = $(window).scrollTop();
+            // 조건문
+            // 현재 스크롤 위치가 0 일때 바디에 클래스 제거
+            // 현재 스크롤 위치가 0 보다 크면 클래스 추가
+
+            if(sct == 0){
+                $('body').removeClass('header--on');
+            }else{
+                $('body').addClass('header--on');
+            }
+        });
+    }
+    scrollHeader();
+
 
     // .gnb>li 마우스 오버시 fadeIn/fadeOut
     $(".gnb>li").hover(

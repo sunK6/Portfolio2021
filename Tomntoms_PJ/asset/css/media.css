@@ -17,28 +17,36 @@
     .mtitbx {
         width: 100%;
         padding: 20px;
-        bottom: 204px;
+    }
+    .pick:hover .mtitbx, .pick:hover .mtit, .pick:hover .mtitbx img{
+        bottom: 6px;
     }
 
     .mtit {
-        font-size: 22px;
+        font-size: 19px;
     }
 
     .tomsv {
-        max-width: 1000px;
+        max-width: 1200px;
     }
+    
 
     .vid-tit {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .vid-bx {
         width: 100%;
+        height: 520px;
+    }
+
+    .vid-cont{
+        height: 520px;
     }
 
     .vid-img li {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .fcap li {
@@ -78,6 +86,10 @@
         transform: translateX(-50%);
         margin: 0;
     }
+    body.header--on .logo img{
+        width: 47px;
+
+    }
 
     .logo img {
         width: 47px;
@@ -111,34 +123,35 @@
     .notic .inner {
         width: 100%;
         justify-content: space-between;
-        padding: 0 42px 0 0;
+        padding: 0 42px 0 17px;
     }
 
     .notic a {
         font-size: 14px;
     }
-
-    .mtab li {
-        font-size: 10px;
+    .notice::before{
+        left: 28px;
     }
+    
 
     .txt {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .mtitbx {
         width: 100%;
         padding: 20px;
-        bottom: 204px;
     }
 
+    .mtitbx img{
+        width: 25px;
+        height: 10px;
+    }
     .mtit {
         font-size: 16px;
     }
 
-    .pick:hover .mtitbx {
-        bottom: 204px;
-    }
+    
 
     .mbtn {
         font-size: 25px;
@@ -246,6 +259,12 @@
     .sns-list img {
         width: 40px;
     }
+    #tomsv{
+        height: auto;
+    }
+    .tomsSns>.pbx{
+        height: auto;
+    }
 
 }
 
@@ -254,6 +273,28 @@
 
 /* 모바일 미디어쿼리 */
 @media only screen and (max-width:700px) {
+    .pbx{
+        padding: 15px;
+    }
+    :root{
+        --swiper-navigation-size: 30px;
+    }
+    .mrb{
+        right: 4%;
+    }
+    .mlb{
+        left: 4%;
+    }
+
+    .tomsmenu {
+        padding-bottom: 80px;
+    }
+    .tomsmenu>.pbx{
+        height: auto;
+    }
+    .tomsmp>.pbx{
+        height: auto;
+    }
 
     .ibx {
         width: 100vw;
@@ -265,80 +306,68 @@
     }
 
     /* 배너 슬라이드 배경이미지 모바일용으로 변경하기 */
-    .slide>ul>li:nth-child(1) {
-        background-image: url(../images/1/mo-slide1.jpg);
+    .mySwiper1 .swiper-slide img:last-child {
+        display: block;
     }
 
-    .slide>ul>li:nth-child(2) {
-        background-image: url(../images/1/mo-slide2.jpg);
+    .mySwiper1 .swiper-slide img:first-child {
+        display: none;
     }
 
-    .slide>ul>li:nth-child(3) {
-        background-image: url(../images/1/mo-slide3.jpg);
+    .mySwiper1 .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+    .notic .inner {
+        padding: 0 37px 0 23px;
     }
 
-    .slide>ul>li:nth-child(4) {
-        background-image: url(../images/1/mo-slide4.jpg);
-    }
+    .notic li{
+        padding: 0 40px 0 60px;
 
-    .slide>ul>li:nth-child(5) {
-        background-image: url(../images/1/mo-slide5.jpg);
     }
-
-    .slide>ul>li:nth-child(6) {
-        background-image: url(../images/1/mo-slide6.jpg);
-    }
-
-    .slide>ul>li:nth-child(7) {
-        background-image: url(../images/1/mo-slide7.jpg);
-    }
-
-    .slide>ul>li:nth-child(8) {
-        background-image: url(../images/1/mo-slide8.jpg);
-    }
-
-    .slide>ul>li:nth-child(9) {
-        background-image: url(../images/1/mo-slide9.jpg);
-    }
-
-    .slide>ul>li:nth-child(10) {
-        background-image: url(../images/1/mo-slide10.png);
-    }
-
     .notice::before {
         width: 32px;
-        left: 10px;
+        left: 28px;
     }
-
+    
+    .tit{
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
     .tit span {
         font-size: 30px;
     }
 
-
+/* 
     .mtab li {
         margin: 0 16px;
     }
 
     .mtab a {
         font-size: 2vw;
-    }
+    } */
 
-    .menu {
-        width: 500%;
-    }
+    /* .menu {
+        width: 5/00%;
+    } */
 
-    .item {
+    /* .item {
         width: 720px;
-        margin: 0 52px;
-    }
-    .mbtn{
-        top: 56%;
+    } */
+
+    .mbtn {
+        top: 61%;
     }
 
 
     .md {
         width: 350%;
         height: 569px;
+    }
+
+    .tomsmp{
+        padding-bottom: 80px;
     }
 
     .tomsmp .mbtn {
@@ -349,20 +378,21 @@
         width: 17.6%;
     }
 
-    
+
     .pick:hover {
         transform: none;
     }
-    
+
     .pick:hover img {
         transform: none;
     }
-    
+
     .mtitbx {
         height: 90px;
         opacity: 1;
-        bottom: 204px;
+        bottom: 0;
     }
+
     .mtitbx img {
         margin-top: 20px;
     }
@@ -378,11 +408,16 @@
         width: 22px;
         height: 10px;
     }
-
+    .pick:hover .mtitbx, .pick:hover .mtit, .pick:hover .mtitbx img{
+        bottom: 0;
+    }
     .pick:hover .mtitbx {
-        bottom: 204px;
+        bottom: 0;
     }
 
+    .tomsv{
+        padding-bottom: 80px;
+    }
     .tomsv>.pbx:nth-child(2) {
         width: 100%;
     }
@@ -402,6 +437,7 @@
     }
 
     .vid-tit {
+        
         font-size: 3vw;
         padding: 20px 0 10px;
     }
@@ -411,6 +447,7 @@
     }
 
     .vid-img {
+        display: none;
         top: 48%;
         right: 3%;
         transform: translateY(-50%);
@@ -418,9 +455,9 @@
 
     .vid-img li {
         float: none;
-        margin-bottom: 5px;
+        /* margin-bottom: 5px;
         width: 7vw;
-        height: 7vw;
+        height: 7vw; */
     }
 
     .snsbx {
@@ -433,6 +470,12 @@
         margin-right: 2%;
         margin-bottom: 2%;
     }
+    .sns img{
+        transition: none;
+    }
+    .sns li:hover img{
+        opacity: 1;
+    }
 
     .sns li:last-child {
         display: none;
@@ -442,30 +485,10 @@
     .sns li::after,
     .sns li a::before,
     .sns li a::after {
-       display: none;
+        display: none;
     }
 
 
-
-    /* .ban>.pbx {
-        height: calc(100vh - 60px);
-    }
-
-    .tomsmenu>.pbx {
-        height: calc(100vh - 60px);
-    }
-
-    .tomsmp>.pbx {
-        height: calc(100vh - 60px);
-    }
-
-    .tomsv>.pbx {
-        height: calc(100vh - 60px);
-    }
-
-    .tomsSns>.pbx {
-        height: calc(100vh - 60px);
-    } */
 
     .addbx a {
         font-size: 13px;

@@ -11,30 +11,30 @@
 /* 메인페이지(index.html)에만 나오는 요소 css */
 
 /* 2. 배너영역 */
-#ban{
+#ban {
     position: relative;
 }
-.ban{
+
+.ban {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
-.ban>.pbx{
+
+.ban>.pbx {
     position: relative;
     height: calc(100vh - 137px);
 }
 
 /* 2-1.배너슬라이드 */
-.slide{
+/* .slide{
     position: relative;
     top: 0;
     left: 0;
-    /* height: 800px; */
     overflow: hidden;
-    /* display: none; */
-}
-.slide::before{
+} */
+/* .slide::before{
     content: '';
     display: block;
     padding-top: 42%;
@@ -62,8 +62,52 @@
 .slide>ul>li.on{
     opacity: 1;
     z-index: 1;
+} */
+.mySwiper1 .swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 95px;
+    left: 0;
+    width: 100%;
 }
 
+.mySwiper1 .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+}
+
+.mySwiper1 .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper1 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper1 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper1 .swiper-slide img:last-child {
+    display: none;
+}
+
+
+
+
+
+/* 
 .slide>ul>li:nth-child(1) {
     background-image: url(../images/1/slide1.jpg);
 }
@@ -93,10 +137,10 @@
 }
 .slide>ul>li:nth-child(10) {
     background-image: url(../images/1/slide10.png);
-}
+} */
 
 /* 2-2.블릿 */
-.indic{
+.indic {
     position: absolute;
     bottom: 15%;
     left: 30%;
@@ -106,7 +150,7 @@
 }
 
 /* 슬라이드이동버튼 */
-.sbtn{
+/* .sbtn{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -123,10 +167,10 @@
 .rb{
     right: 2%;
     background-image: url(../images/1/menu_next.png);
-}
+} */
 
 /* 2-3.공지사항 */
-#notice{
+#notice {
     position: relative;
     bottom: 0;
     width: 100%;
@@ -135,14 +179,16 @@
     z-index: 1;
     /* display: none; */
 }
-.notice{
+
+.notice {
     position: relative;
     width: 1400px;
     height: 70px;
     margin: 0 auto;
     overflow: hidden;
 }
-.notice::before{
+
+.notice::before {
     content: '';
     display: block;
     position: absolute;
@@ -155,7 +201,8 @@
     background-size: contain;
     background-position: center;
 }
-.notic{
+
+.notic {
     position: relative;
     top: 0;
     /* overflow: hidden; */
@@ -163,7 +210,8 @@
     flex-direction: column;
     height: 300%;
 }
-.notic li{
+
+.notic li {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -174,7 +222,8 @@
     padding: 0 82px 0 60px;
     box-sizing: border-box;
 }
-.notic .inner{
+
+.notic .inner {
     position: relative;
     display: flex;
     align-items: center;
@@ -183,22 +232,26 @@
     padding: 0 45px 0 75px;
     box-sizing: border-box;
 }
-.notic a{
+
+.notic a {
     font-size: 16px;
     font-weight: 300;
     color: #fff;
 }
-.txt-bx{
+
+.txt-bx {
     width: 419px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     color: #fff;
 }
-.date-bx{
+
+.date-bx {
     width: 90px;
 }
-.btn-bx{
+
+.btn-bx {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -206,22 +259,25 @@
 }
 
 /* 3. 탐앤탐스 메뉴 */
-#tomsmenu{
+#tomsmenu {
     position: relative;
     background: #fff5d9;
     text-align: center;
 }
-.tomsmenu>.pbx{
+
+.tomsmenu>.pbx {
     position: relative;
     height: 100vh;
     /* display: none; */
 }
+
 /* 3-1.타이틀 */
-.tit{
+.tit {
     margin-top: 130px;
     margin-bottom: 100px;
 }
-.tit span{
+
+.tit span {
     display: inline-block;
     font-family: 'Montserrat';
     font-size: 50px;
@@ -229,6 +285,7 @@
     padding-bottom: 5px;
     border-bottom: 4px solid #401e20;
 }
+
 /* 3-2.메뉴탭 */
 /* .mtab{
     display: inline-block;
@@ -264,23 +321,26 @@
     opacity: 1;
 } */
 /* 3-3.메뉴 */
-.items{
+.items {
     overflow: hidden;
 }
-.menu{
+
+.menu {
     display: flex;
     width: 200%;
     /* height: 530px; */
 }
-.item{
-    width: 15.6%;
-    margin: 0 16px;
+
+.item {
+    width: 100%;
 }
-.item img{
+
+.item img {
     width: 100%;
     /* height: 437px; */
 }
-.txt{
+
+.txt {
     display: inline-block;
     margin-top: 35px;
     padding: 10px 20px;
@@ -290,8 +350,9 @@
     font-weight: 700;
     border: 2px solid #3c2121;
 }
+
 /* 메뉴이동버튼 */
-.mbtn{
+.mbtn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -299,59 +360,69 @@
     color: #572a31;
     text-align: center;
 }
-.mrb{
+
+.mrb {
     right: -5%;
-    
+
 }
-.mlb{
+
+.mlb {
     left: -5%;
 }
-.mbtn:hover{
+
+.mbtn:hover {
     color: #572a31d7;
 }
 
 /* 4. 탐앤탐스엠디픽 */
-#tomsmp{
+#tomsmp {
     position: relative;
     background: #ffdcd1;
     text-align: center;
 }
-.tomsmp>.pbx{
+
+.tomsmp>.pbx {
     position: relative;
     height: 100vh;
     /* display: none; */
 }
+
 /* 4-2.엠디픽 */
-.picks{
+.picks {
     overflow: hidden;
 }
-.md{
+
+.md {
     display: flex;
     width: 200%;
     height: 437px;
 }
-.pick{
+
+.pick {
     position: relative;
-    width: 15.6%;
-    margin: 0 16px;
+    width: 100%;
     overflow: hidden;
     transition: all 0.5s;
 }
-.pick img{
+
+.pick img {
     width: 100%;
     /* height: 397px; */
-    margin-top: 19px;   
+    margin-top: 19px;
     transition: all 0.5s .1s;
 }
+
 /* 마우스오버시 */
-.pick:hover{
+.pick:hover {
     transform: scale(1.07);
 }
-.pick:hover img{
+
+.pick:hover img {
     transform: scale(1.1);
 }
+
 /* 엠디타이틀박스 */
-.mtitbx{
+.mtitbx {
     position: absolute;
     width: 65%;
     left: 0;
@@ -362,7 +433,8 @@
     opacity: 0;
     transition: all 0.5s;
 }
-.mtit{
+
+.mtit {
     position: relative;
     font-size: 25px;
     color: #fff;
@@ -374,7 +446,8 @@
     font-family: 'NotoSansKR', sans-serif;
     letter-spacing: -0.5px;
 }
-.mtitbx img{
+
+.mtitbx img {
     position: relative;
     width: 30px;
     height: 14px;
@@ -382,16 +455,17 @@
     opacity: 0;
     transition: all 0.5s 0.3s;
 }
+
 .pick:hover .mtitbx,
 .pick:hover .mtit,
-.pick:hover .mtitbx img{
+.pick:hover .mtitbx img {
     bottom: 0;
     opacity: 1;
 }
 
 
 /* 5. 탐앤탐스 비디오 */
-#tomsv{
+#tomsv {
     position: relative;
     text-align: center;
     height: 100vh;
@@ -399,7 +473,8 @@
     overflow: hidden;
     z-index: 1;
 }
-#tomsv::before{
+
+#tomsv::before {
     content: '';
     display: block;
     width: 1260px;
@@ -412,53 +487,61 @@
     border-radius: 50%;
     z-index: -1;
 }
-.tomsv>.pbx{
+
+.tomsv>.pbx {
     float: left;
     /* display: none; */
 }
+
 /* 비디오박스 */
-.vid-bx{
+.vid-bx {
     position: relative;
-    width: 840px;
+    width: 100%;
     height: 566px;
 }
-.ifr{
+
+.ifr {
     height: 100%;
 }
-.ifr iframe{
+
+.ifr iframe {
     border: none;
 }
-.vid_cover{
+
+.vid_cover {
     position: absolute;
     width: 100%;
     height: 100%;
     background-image: url(../images/1/videoimg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
+    background-size: auto 117%;
     background-color: #fff;
 }
-.btn_play{
+
+.btn_play {
     position: absolute;
     width: 128px;
     height: 128px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: url(../images/2/btn_play.png) no-repeat center center/100%;
 
     border: none;
     cursor: pointer;
 }
+
 /* 비디오컨텐츠 */
-.vid-cont{
+.vid-cont {
     position: relative;
     height: 566px;
     padding-left: 6%;
     font-family: NotoSansKR;
     text-align-last: left;
 }
-.vid-tit{
+
+.vid-tit {
     display: block;
     font-size: 37px;
     letter-spacing: -0.5px;
@@ -466,95 +549,114 @@
     color: #000;
     padding: 160px 0 30px;
 }
-.vid-stit{
+
+.vid-stit {
     font-size: 16px;
     color: #444;
     letter-spacing: -0.5px;
     line-height: 1.6;
 }
-.vid-img{
+
+.vid-img {
     position: absolute;
     bottom: 0;
 }
-.vid-img li{
+
+.vid-img li {
     width: 90px;
     height: 90px;
     margin-right: 20px;
     border-radius: 30%;
 }
-.vid-img img{
+
+.vid-img img {
     width: 100%;
     height: 100%;
     border-radius: 30%;
 }
 
 /* 6. SNS */
-#tomsSns{
+#tomsSns {
     position: relative;
     text-align: center;
     background-color: #def1ee;
 }
-.tomsSns>.pbx{
+
+.tomsSns>.pbx {
     height: 100vh;
     /* display: none; */
 }
-.sns{
+
+.sns {
     display: flex;
     flex-wrap: wrap;
 }
-.sns li{
+
+.sns li {
     position: relative;
     width: 20%;
 }
-.sns img{
+
+.sns img {
     width: 100%;
     transition: all .5s;
 }
-.sns li:hover img{
+
+.sns li:hover img {
     opacity: 0.6;
 }
-.sns li::before{
+
+.sns li::before {
     width: 0;
     height: 13px;
     right: 0;
     top: 0;
 }
-.sns li::after{
+
+.sns li::after {
     width: 13px;
     height: 0;
     right: 0;
     top: 0;
 }
-.sns li a::before{
+
+.sns li a::before {
     width: 0;
     height: 13px;
     left: 0;
     bottom: 0;
 }
-.sns li a::after{
+
+.sns li a::after {
     width: 13px;
     height: 0;
     left: 0;
     bottom: 0;
 }
-.sns li::before, .sns li::after,
-.sns li a::before, .sns li a::after{
+
+.sns li::before,
+.sns li::after,
+.sns li a::before,
+.sns li a::after {
     content: '';
     position: absolute;
     background: #e6002d;
     z-index: 1;
     transition: all 1s;
 }
-.sns li:hover::before{
+
+.sns li:hover::before {
     width: 100%;
 }
-.sns li:hover::after{
-    height: 100%;
-}
-.sns li:hover a::before{
-    width: 100%;
-}
-.sns li:hover a::after{
+
+.sns li:hover::after {
     height: 100%;
 }
 
+.sns li:hover a::before {
+    width: 100%;
+}
+
+.sns li:hover a::after {
+    height: 100%;
+}

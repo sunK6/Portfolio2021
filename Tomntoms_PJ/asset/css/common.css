@@ -35,12 +35,26 @@ body *{
 
 .top>.pbx{
     height: 137px;
+    transition: height .3s ease-out;
 }
 
 /* 1-1. 로고 */
 .logo{
     margin-top: 11px;
 }
+.logo img{
+    display: inline-block;
+    width: 95px;
+    transition: width .3s ease-out;
+
+}
+
+body.header--on .logo img {width: 80px;}
+body.header--on .top>.pbx {height: 120px;}
+body.header--on #top {box-shadow: 1px 1px 10px rgb(0 0 0 / 30%);}
+
+
+
 
 /* 1-2. 공통메뉴 */
 .tmenu{

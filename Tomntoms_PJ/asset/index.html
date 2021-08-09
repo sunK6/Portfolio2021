@@ -8,12 +8,14 @@
     <meta name="format-detection" content="telephone=no">
     <title>TOM N TOMS</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/linksys.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <!-- <script src="js/linksys.js"></script> -->
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -46,23 +48,23 @@
                     <ul class="gnb">
                         <!-- 1-3-1. 메뉴 -->
                         <li>
-                            <a href="#">MENU</a>
+                            <a href="./menu.html">MENU</a>
                             <div class="gnb_sub sbx1">
                                 <ol class="sub">
-                                    <li><a href="#">신메뉴</a></li>
-                                    <li><a href="#">음료</a></li>
-                                    <li><a href="#">푸드</a></li>
-                                    <li><a href="#">MD</a></li>
+                                    <li><a href="./menu.html">신메뉴</a></li>
+                                    <li><a href="./menu.html">음료</a></li>
+                                    <li><a href="./menu.html">푸드</a></li>
+                                    <li><a href="./menu.html">MD</a></li>
                                 </ol>
                             </div>
                         </li>
                         <!-- 1-3-2. 이벤트 -->
                         <li>
-                            <a href="#">EVENT</a>
+                            <a href="./event.html">EVENT</a>
                         </li>
                         <!-- 1-3-3. 스토어 -->
                         <li>
-                            <a href="#">STORE</a>
+                            <a href="./store.html">STORE</a>
                             <div class="gnb_sub sbx2">
                                 <ol class="sub">
                                     <li><a href="#">국내 매장 찾기</a></li>
@@ -201,24 +203,24 @@
                         <a href="#">MENU</a>
                         <div class="mgnb_sub msbx1">
                             <ol class="msub">
-                                <li><a href="#">신메뉴</a></li>
-                                <li><a href="#">음료</a></li>
-                                <li><a href="#">푸드</a></li>
-                                <li><a href="#">MD</a></li>
+                                <li><a href="./menu.html">신메뉴</a></li>
+                                <li><a href="./menu.html">음료</a></li>
+                                <li><a href="./menu.html">푸드</a></li>
+                                <li><a href="./menu.html">MD</a></li>
                             </ol>
                         </div>
                     </li>
                     <!-- 1-3-2. 이벤트 -->
                     <li>
-                        <a href="#">EVENT</a>
+                        <a href="./event.html">EVENT</a>
                     </li>
                     <!-- 1-3-3. 스토어 -->
                     <li>
                         <a href="#">STORE</a>
                         <div class="mgnb_sub msbx2">
                             <ol class="msub">
-                                <li><a href="#">국내 매장 찾기</a></li>
-                                <li><a href="#">글로벌 매장 찾기</a></li>
+                                <li><a href="./store.html">국내 매장 찾기</a></li>
+                                <li><a href="./store.html">글로벌 매장 찾기</a></li>
                             </ol>
                         </div>
                     </li>
@@ -296,27 +298,99 @@
     <!-- 2. 배너영역 -->
     <div id="ban">
         <!-- 2-1.배너슬라이드 -->
-        <section class="slide">
-            <ul>
-                <li class="on"><span class="ir">배너이미지1</span></li>
-                <li><span class="ir">배너이미지2</span></li>
-                <li><span class="ir">배너이미지3</span></li>
-                <li><span class="ir">배너이미지4</span></li>
-                <li><span class="ir">배너이미지5</span></li>
-                <li><span class="ir">배너이미지6</span></li>
-                <li><span class="ir">배너이미지7</span></li>
-                <li><span class="ir">배너이미지8</span></li>
-                <li><span class="ir">배너이미지9</span></li>
-                <li><span class="ir">배너이미지10</span></li>
-            </ul>
-            <!-- 배너이동버튼 -->
-            <a href="#" class="sbtn lb">
-                <span class="ir">배너왼쪽이동버튼</span>
-            </a>
-            <a href="#" class="sbtn rb">
-                <span class="ir">배너오른쪽이동버튼</span>
-            </a>
-        </section>
+        
+        <!-- Swiper -->
+        <div class="swiper-container mySwiper1">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide">
+                    <img src="images/1/slide1.jpg" alt="슬라이드">
+                    <img src="images/1/mo-slide1.jpg" alt="슬라이드">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/1/slide2.jpg" alt="슬라이드">
+                    <img src="images/1/mo-slide2.jpg" alt="슬라이드">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/1/slide3.jpg" alt="슬라이드">
+                    <img src="images/1/mo-slide3.jpg" alt="슬라이드">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/1/slide4.jpg" alt="슬라이드">
+                    <img src="images/1/mo-slide4.jpg" alt="슬라이드">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/1/slide5.jpg" alt="슬라이드">
+                    <img src="images/1/mo-slide5.jpg" alt="슬라이드">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/1/slide6.jpg" alt="슬라이드">
+                    <img src="images/1/mo-slide6.jpg" alt="슬라이드">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/1/slide7.jpg" alt="슬라이드">
+                    <img src="images/1/mo-slide7.jpg" alt="슬라이드">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/1/slide8.jpg" alt="슬라이드">
+                    <img src="images/1/mo-slide8.jpg" alt="슬라이드">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/1/slide9.jpg" alt="슬라이드">
+                    <img src="images/1/mo-slide9.jpg" alt="슬라이드">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/1/slide10.png" alt="슬라이드">
+                    <img src="images/1/mo-slide10.png" alt="슬라이드">
+                </a>
+            </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                
+    </div>
+        <!-- 2-1.모바일용슬라이드 -->
+        
+        <!-- Swiper -->
+        <!-- <div class="swiper-container moSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/1/mo-slide1.jpg" alt="슬라이드">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/1/mo-slide2.jpg" alt="슬라이드">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/1/mo-slide3.jpg" alt="슬라이드">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/1/mo-slide4.jpg" alt="슬라이드">
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div> -->
+        <!-- <ul>
+            <li class="on"><span class="ir">배너이미지1</span></li>
+            <li><span class="ir">배너이미지2</span></li>
+            <li><span class="ir">배너이미지3</span></li>
+            <li><span class="ir">배너이미지4</span></li>
+            <li><span class="ir">배너이미지5</span></li>
+            <li><span class="ir">배너이미지6</span></li>
+            <li><span class="ir">배너이미지7</span></li>
+            <li><span class="ir">배너이미지8</span></li>
+            <li><span class="ir">배너이미지9</span></li>
+            <li><span class="ir">배너이미지10</span></li>
+        </ul> -->
+        <!-- 배너이동버튼 -->
+        <!-- <a href="#" class="sbtn lb">
+            <span class="ir">배너왼쪽이동버튼</span>
+        </a>
+        <a href="#" class="sbtn rb">
+            <span class="ir">배너오른쪽이동버튼</span>
+        </a> -->
+        
         <section class="ibx ban">
             <h2 class="bld">배너영역</h2>
             <div class="pbx col-5 prt">
@@ -328,9 +402,9 @@
         </section>
         <!-- 2-3.공지사항 -->
         <section id="notice">
-            <div class="ibx notice">
-                <ol class="notic">
-                    <li>
+            <div class="ibx notice swiper-container mySwiper2">
+                <ol class="notic swiper-wrapper">
+                    <li class="swiper-slide">
                         <div class="inner">
                             <div class="txt-bx">
                                 <a href="#">[신메뉴 출시] 버터스카치 라떼 출시</a>
@@ -358,7 +432,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <div class="inner">
                             <div class="txt-bx">
                                 <a href="#">[보도자료] "든든한 식사 한끼" 탐앤탐스 한끼 세트 탐모닝·탐런치 선봬</a>
@@ -386,7 +460,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <div class="inner">
                             <div class="txt-bx">
                                 <a href="#">[신제품 출시] 꼰대라떼 리뉴얼 제품 출시</a>
@@ -418,7 +492,6 @@
                 </ol>
             </div>
         </section>
-    </div>
     <!-- 3. 탐앤탐스메뉴 -->
     <div id="tomsmenu">
         <div class="ibx tomsmenu">
@@ -441,52 +514,77 @@
                     </li>
                 </ul> -->
                 <!-- 3-3.메뉴 -->
-                <div class="items">
-                    <ul class="menu">
-                        <li class="item">
+                <div class="items swiper-container mySwiper3">
+                    <ul class="menu swiper-wrapper">
+                        <li class="item swiper-slide">
                             <a href="#">
                                 <img src="./images/1/menu1.jpg" alt="menu">
                             </a>
                             <!-- 텍스트 -->
                             <a href="#" class="txt">버터스카치 라떼</a>
                         </li>
-                        <li class="item">
+                        <li class="item swiper-slide">
                             <a href="#">
                                 <img src="./images/1/menu2.jpg" alt="menu">
                             </a>
                             <!-- 텍스트 -->
                             <a href="#" class="txt">콜드브루 타임</a>
                         </li>
-                        <li class="item">
+                        <li class="item swiper-slide">
                             <a href="#">
                                 <img src="./images/1/menu3.jpg" alt="menu">
                             </a>
                             <!-- 텍스트 -->
                             <a href="#" class="txt">어게인 아이스 플레이크</a>
                         </li>
-                        <li class="item">
+                        <li class="item swiper-slide">
                             <a href="#">
                                 <img src="./images/1/menu4.jpg" alt="menu">
                             </a>
                             <!-- 텍스트 -->
                             <a href="#" class="txt">크로플 4종</a>
                         </li>
-                        <li class="item">
+                        <li class="item swiper-slide">
                             <a href="#">
                                 <img src="./images/1/menu5.jpg" alt="menu">
                             </a>
                             <!-- 텍스트 -->
-                            <a href="#" class="txt">와인 샤베트</a>
+                            <a href="#" class="txt">썸머 샤베트</a>
                         </li>
+                        <li class="item swiper-slide">
+                            <a href="#">
+                                <img src="./images/1/menu6.jpg" alt="menu">
+                            </a>
+                            <!-- 텍스트 -->
+                            <a href="#" class="txt">코코넛 워터</a>
+                        </li>
+                        <li class="item swiper-slide">
+                            <a href="#">
+                                <img src="./images/1/menu7.jpg" alt="menu">
+                            </a>
+                            <!-- 텍스트 -->
+                            <a href="#" class="txt">스크램블 에그 프렌치 토스트</a>
+                        </li>
+                        <li class="item swiper-slide">
+                            <a href="#">
+                                <img src="./images/1/menu8.jpg" alt="menu">
+                            </a>
+                            <!-- 텍스트 -->
+                            <a href="#" class="txt">스크램블 에그 샌드위치</a>
+                        </li>
+                        
                     </ul>
                 </div>
 
                 <!-- 오른쪽이동버튼 -->
-                <a href="#" class="mbtn mrb fi fi-angle-dobule-right">
+                <a href="#" class="mbtn mrb swiper-button-next">
                     <span class="ir">메뉴오른쪽이동버튼</span>
                 </a>
                 <!-- 왼쪽이동버튼 -->
-                <a href="#" class="mbtn mlb fi fi-angle-dobule-left"></a>
+                <a href="#" class="mbtn mlb swiper-button-prev">
+                    <span class="ir">메뉴왼쪽이동버튼</span>
+                </a>
+                <div class="swiper-pagination"></div>
             </div>
 
         </div>
@@ -499,9 +597,9 @@
                 <h2 class="tit"><span>TOM N TOMS MD's PICK</span></h2>
 
                 <!-- 4-2.엠디픽 -->
-                <div class="picks">
-                    <ul class="md">
-                        <li class="pick">
+                <div class="picks swiper-container mySwiper3">
+                    <ul class="md swiper-wrapper">
+                        <li class="pick swiper-slide">
                             <a href="#">
                                 <img src="./images/1/md1.jpg" alt="md">
                             </a>
@@ -511,7 +609,7 @@
                                 <img src="./images/2/arrow_cont.png" alt="이동버튼">
                             </a>
                         </li>
-                        <li class="pick">
+                        <li class="pick swiper-slide">
                             <a href="#">
                                 <img src="./images/1/md2.jpg" alt="md">
                             </a>
@@ -521,7 +619,7 @@
                                 <img src="./images/2/arrow_cont.png" alt="이동버튼">
                             </a>
                         </li>
-                        <li class="pick">
+                        <li class="pick swiper-slide">
                             <a href="#">
                                 <img src="./images/1/md3.jpg" alt="md">
                             </a>
@@ -531,7 +629,7 @@
                                 <img src="./images/2/arrow_cont.png" alt="이동버튼">
                             </a>
                         </li>
-                        <li class="pick">
+                        <li class="pick swiper-slide">
                             <a href="#">
                                 <img src="./images/1/md4.jpg" alt="md">
                             </a>
@@ -541,7 +639,7 @@
                                 <img src="./images/2/arrow_cont.png" alt="이동버튼">
                             </a>
                         </li>
-                        <li class="pick">
+                        <li class="pick swiper-slide">
                             <a href="#">
                                 <img src="./images/1/md5.jpg" alt="md">
                             </a>
@@ -554,11 +652,13 @@
                     </ul>
                 </div>
                 <!-- 오른쪽이동버튼 -->
-                <a href="#" class="mbtn mrb fi fi-angle-dobule-right">
+                <a href="#" class="mbtn mrb swiper-button-next">
                     <span class="ir">메뉴오른쪽이동버튼</span>
                 </a>
                 <!-- 왼쪽이동버튼 -->
-                <a href="#" class="mbtn mlb fi fi-angle-dobule-left"></a>
+                <a href="#" class="mbtn mlb swiper-button-prev">
+                    <span class="ir">메뉴왼쪽이동버튼</span>
+                </a>
             </div>
         </div>
     </div><!-- #tomsmp -->
@@ -596,7 +696,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/1/md4.jpg" alt="방탄커피이미지">
+                                <img src="./images/1/bbq.JPG" alt="bbq이미지">
                             </a>
                         </li>
                     </ul>
