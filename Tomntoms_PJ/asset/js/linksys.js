@@ -1,35 +1,75 @@
 // 보그 코리아 링크 시스템 JS -linksys.js //
 
+
 $(function () { /////////// jQB /////////////////////////////////////
 
-    // 로고 클릭시 메인페이지로 이동하기
-    $(".logo a").click(function (e) {
+    //////// 신상품 li 클릭시 상세페이지 이동하기 ///////////
+    $(".sub a,.msub a").click(function(e){
 
-        // 기본이동막기
+        // 1. 기본이동막기
         e.preventDefault();
+  
+        // 2. li의 클래스 정보 읽어오기
+        let nm = $(this).text();
+        console.log("넘길값:"+nm);
 
-        location.href = "index.html";
+        let url;
 
-    }); //////////// click //////////////////////
+        if(nm=="신메뉴"||nm=="음료"||nm=="푸드"||nm=="MD"){
+          url = "menu.html?gno="+escape(nm);
+        }
+        else if(nm=="event"){
+          url = "event.html"
+        }
+        else {
+          url = "index.html";
+        }
 
-    // GNB 메뉴 링크 연결하기 //
-    // 대상: .gnb a
-    $(".gnb a").click(function(e){
 
-        // 기본이동막기
+  
+        // 3. 상세페이지로 이동하기
+        location.href = url;
+  
+      }); /////////// click /////////////////////
+    $(".gnb>li>a").click(function(e){
+
+        // 1. 기본이동막기
         e.preventDefault();
-        
-        // 클릭한 a 요소의 텍스트 읽어오기
-        let mtxt = $(this).text().toLowerCase();
-        // toLowerCase() -> 소문자로 모두 변환!
-        // 비교) toUpperCase() -> 대문자로 모두 변환!
+  
+        // 2. li의 클래스 정보 읽어오기
+        let nm = $(this).text();
+        console.log("넘길값:"+nm);
 
-        console.log(mtxt);
+        let url;
 
-        // 페이지 이동하기 //
-        location.href = "sub.html?cat="+mtxt;
-        
+        if(nm=="MENU"){
+          url = "menu.html?gno="+nm;
+        }
+        else if(nm=="EVENT"){
+          url = "event.html?"
+        }
+        else if(nm=="STORE"){
+          url = "store.html?"
+        }
+        else if(nm=="SERVICE"){
+          url = "service.html?"
+        }
+        else if(nm=="COMMUNITY"){
+          url = "community.html?"
+        }
+        else if(nm=="TOM N TOMS"){
+          url = "tomntoms.html?"
+        }
+        // else {
+        //   url = "index.html";
+        // }
 
-    }); /////////// click //////////////////////
+
+  
+        // 3. 상세페이지로 이동하기
+        location.href = url;
+  
+      }); /////////// click /////////////////////
+  
 
 }); //////////////////// jQB ///////////////////////////////////////

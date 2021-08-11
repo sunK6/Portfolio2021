@@ -1,33 +1,6 @@
 // 탐앤탐스 서브 페이지 JS - sub.js
 
 
-
-///////////////////////////////////////////////////////
-//// 페이지 로딩시 파라미터 변수 받아서 페이지 셋팅하기 ///
-
-// 파라미터변수
-let pm = location.href;
-// location.href 가 오른쪽에 있고 왼쪽 변수에 할당때는
-// url정보를 가져와서 변수에 할당한다!
-
-// 만약 물음표(?)전달값에 없다면 men페이지로 돌려보낸다!
-// indexOf(문자열) - 찾는 문자열의 위치순번을 알려줌
-// 그런데 이 문자열이 없다면 -1을 리턴함!
-if (pm.indexOf("?") === -1) { //물음표가 없다면
-    location.href = "index.html";
-} ///////// if문 //////////////////////
-
-
-// url데이터 가공 - 물음표(?)로 잘라 뒤엣것 [1]
-// 그리고 이퀄(=)로 잘라 뒤엣것 [1]
-pm = unescape(pm.split("?")[1].split("=")[1]);
-// 한글때문에 escape로 보내고 unescape로 받는다!
-
-console.log("전달값:" + pm);
-
-
-
-
 let smenu = {
     "푸드": [{
             "ktit": '스크램블 에그 샌드위치<span class="new">NEW</span>',
@@ -331,8 +304,6 @@ $(function () { // jQB ///////////////////////////////
 
     $(".mtab li").click(function () {
         $(this).addClass("on").siblings().removeClass("on");
-        $(".morebtn").show();
-        $(".dn").removeClass("on");
     });
 
 
@@ -344,58 +315,6 @@ $(function () { // jQB ///////////////////////////////
     }); /////////// each /////////////////
 
 
-
-   let choice = () => {
-
-
-        let txt = pm;
-
-        $('.st').text(txt); // end
-
-        if (txt == "푸드") {
-            $(".menu-list").each(function (idx, ele) {
-                // console.log("순번"+idx);
-                $(ele).find("a>img")
-                    .attr("src", "images/1/food/" + (idx + 1) + ".jpg");
-
-                $(ele).find(".txt").html(smenu[txt][idx]["ktit"]);
-                $(ele).find(".s-txt").text(smenu[txt][idx]["etit"]);
-
-
-
-            }); /////////// each /////////////////
-
-        } //////// if ////////////
-        else if (txt == "음료") {
-            $(".menu-list").each(function (idx, ele) {
-                // console.log("순번"+idx);
-                $(ele).find("a>img")
-                    .attr("src", "images/1/bev/" + (idx + 1) + ".jpg");
-
-                $(ele).find(".txt").html(smenu[txt][idx]["ktit"]);
-                $(ele).find(".s-txt").text(smenu[txt][idx]["etit"]);
-
-
-            }); /////////// each /////////////////
-
-        } //////// else if ////////////
-        else if (txt == "MD") {
-            $(".menu-list").each(function (idx, ele) {
-                // console.log("순번"+idx);
-                $(ele).find("a>img")
-                    .attr("src", "images/1/md/" + (idx + 1) + ".jpg");
-
-                $(ele).find(".txt").html(smenu[txt][idx]["ktit"]);
-                $(ele).find(".s-txt").text(smenu[txt][idx]["etit"]);
-
-
-            }); /////////// each /////////////////
-
-        } //////// else if ////////////
-        
-   }; /////////// choice 함수 ///////////////////
-
-   choice();
 
     $(".mtab a").click(function (e) {
         e.preventDefault();

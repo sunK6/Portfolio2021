@@ -103,10 +103,22 @@
 
 .menusec{
     height: 73px;
-    border-top: 2px solid #000;
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
     /* outline: 1px dotted red; */
+}
+.menusec ol{
+    display: flex;
+    max-width: 720px;
+    margin: 0 auto;
+}
+.menusec ol li{
+    flex: 33.33%;
+    width: 33.33%;
+}
+.menusec ol a{
+    font-size: 24px;
+    font-family: NotoSansKR;
 }
 
 .cont4{
@@ -124,8 +136,7 @@
     font-family: "NotoSansKR",sans-serif;
     margin: 0 0 25px;
 }
-#menu-list,
-#menu-list2{
+#menu-list{
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -180,48 +191,33 @@
     overflow: hidden;
 }
 
-.mswrap{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    line-height: 48px;
+.mwrap>p{
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
-/* 체크박스 */
-.checkbx{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: flex-start;
-}
-.check-inner{
-    margin-right: 50px;
+
+.banarea{
+    height: 306px;
+    background: url(../images/1/service1_bg1.jpg) no-repeat center/cover;
+    text-align: center;
 }
 
-/* 검색박스 */
-.searchbx{
-    position: relative;
-    border: 1px solid #ddd;
-    padding: 0 70px 0 10px;
+.txtarea{
+    padding: 60px 0;
 }
-#search{
-    border: 0;
-    /* outline: 0; */
+.t1{
+    font-size: 40px;
+    font-family: NotoSansKR;
+    color: #fff;
 }
-#sbtn{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 55px;
-    height: 100%;
-    cursor: pointer;
-    border: none;
-    background-color: #fff;
-    background-image: url(../images/1/search_i.png);
-    background-repeat: no-repeat;
-    background-position: center;
+.t2{
+    color: #fff;
+    font-family: NotoSansKR;
+    font-weight: 300;
+    line-height: 3;
 }
+
 
 /* display:none */
 .dn{

@@ -15,7 +15,8 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <!-- <script src="js/linksys.js"></script> -->
+    <script src="js/jquery.scroll-reveal.js"></script>
+    <script src="js/linksys.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -48,13 +49,13 @@
                     <ul class="gnb">
                         <!-- 1-3-1. 메뉴 -->
                         <li>
-                            <a href="./menu.html">MENU</a>
+                            <a href="#">MENU</a>
                             <div class="gnb_sub sbx1">
                                 <ol class="sub">
-                                    <li><a href="./menu.html">신메뉴</a></li>
-                                    <li><a href="./menu.html">음료</a></li>
-                                    <li><a href="./menu.html">푸드</a></li>
-                                    <li><a href="./menu.html">MD</a></li>
+                                    <li><a href="#">신메뉴</a></li>
+                                    <li class="m1"><a href="#">음료</a></li>
+                                    <li class="m2"><a href="#">푸드</a></li>
+                                    <li class="m3"><a href="#">MD</a></li>
                                 </ol>
                             </div>
                         </li>
@@ -497,7 +498,7 @@
         <div class="ibx tomsmenu">
             <div class="pbx col-12">
                 <!-- 3-1.타이틀 -->
-                <h2 class="tit"><span>TOM N TOMS MENU</span></h2>
+                <h2 class="tit js-reveal"><span>TOM N TOMS MENU</span></h2>
                 <!-- 3-2.메뉴탭 -->
                 <!-- <ul class="mtab">
                     <li class="on">
@@ -514,7 +515,7 @@
                     </li>
                 </ul> -->
                 <!-- 3-3.메뉴 -->
-                <div class="items swiper-container mySwiper3">
+                <div class="items swiper-container mySwiper3 js-reveal">
                     <ul class="menu swiper-wrapper">
                         <li class="item swiper-slide">
                             <a href="#">
@@ -577,11 +578,11 @@
                 </div>
 
                 <!-- 오른쪽이동버튼 -->
-                <a href="#" class="mbtn mrb swiper-button-next">
+                <a href="#" class="mbtn mrb swiper-button-next js-reveal">
                     <span class="ir">메뉴오른쪽이동버튼</span>
                 </a>
                 <!-- 왼쪽이동버튼 -->
-                <a href="#" class="mbtn mlb swiper-button-prev">
+                <a href="#" class="mbtn mlb swiper-button-prev js-reveal">
                     <span class="ir">메뉴왼쪽이동버튼</span>
                 </a>
                 <div class="swiper-pagination"></div>
@@ -594,10 +595,10 @@
         <div class="ibx tomsmp">
             <div class="pbx col-12">
                 <!-- 4-1.타이틀 -->
-                <h2 class="tit"><span>TOM N TOMS MD's PICK</span></h2>
+                <h2 class="tit js-reveal"><span>TOM N TOMS MD's PICK</span></h2>
 
                 <!-- 4-2.엠디픽 -->
-                <div class="picks swiper-container mySwiper3">
+                <div class="picks swiper-container mySwiper3 js-reveal">
                     <ul class="md swiper-wrapper">
                         <li class="pick swiper-slide">
                             <a href="#">
@@ -652,11 +653,11 @@
                     </ul>
                 </div>
                 <!-- 오른쪽이동버튼 -->
-                <a href="#" class="mbtn mrb swiper-button-next">
+                <a href="#" class="mbtn mrb swiper-button-next js-reveal">
                     <span class="ir">메뉴오른쪽이동버튼</span>
                 </a>
                 <!-- 왼쪽이동버튼 -->
-                <a href="#" class="mbtn mlb swiper-button-prev">
+                <a href="#" class="mbtn mlb swiper-button-prev js-reveal">
                     <span class="ir">메뉴왼쪽이동버튼</span>
                 </a>
             </div>
@@ -667,11 +668,11 @@
         <div class="ibx tomsv">
             <div class="pbx col-12">
                 <!-- 5-1.타이틀 -->
-                <h2 class="tit"><span>TOM N TOMS MD's VIDEO</span></h2>
+                <h2 class="tit js-reveal"><span>TOM N TOMS MD's VIDEO</span></h2>
             </div>
             <div class="pbx col-8">
                 <!-- 5-2.비디오박스 -->
-                <div class="vid-bx">
+                <div class="vid-bx js-reveal">
                     <div class="vid_cover"></div>
                     <button class="btn_play"></button>
                     <div class="ifr"></div>
@@ -679,7 +680,7 @@
             </div>
             <div class="pbx col-4">
                 <!-- 5-3.비디오컨텐츠박스 -->
-                <div class="vid-cont">
+                <div class="vid-cont js-reveal">
                     <strong class="vid-tit">
                         찜통더위를 날려줄🌤 <br>
                         달콤한 아이스티 복숭아
@@ -688,7 +689,7 @@
                         새콤달콤한 복숭아에 잉글리쉬브랙퍼스트 홍차까지 <br>
                         간편한 스틱타입으로 맛과 향을 모두 느껴보세요!
                     </p>
-                    <ul class="vid-img">
+                    <ul class="vid-img js-reveal">
                         <li>
                             <a href="#">
                                 <img src="./images/1/videoimg.jpg" alt="아이스티이미지">
@@ -712,60 +713,70 @@
         <div class="ibx tomsSns">
             <div class="pbx col-12">
                 <!-- 6-1. 타이틀 -->
-                <h2 class="tit">
+                <h2 class="tit js-reveal">
                     <span># TOM N TOMS SNS</span>
                 </h2>
-                <div class="snsbx">
+                <div class="snsbx js-reveal">
                     <ul class="sns">
                         <li>
                             <a href="#">
                                 <img src="./images/1/sns1.jpg" alt="sns이미지">
                             </a>
+                            <div class="insta-over">@hungruichenkorea</div>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="./images/1/sns2.jpg" alt="sns이미지">
                             </a>
+                            <div class="insta-over">@hungruichenkorea</div>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="./images/1/sns3.jpg" alt="sns이미지">
                             </a>
+                            <div class="insta-over">@hungruichenkorea</div>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="./images/1/sns4.jpg" alt="sns이미지">
                             </a>
+                            <div class="insta-over">@hungruichenkorea</div>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="./images/1/sns5.jpg" alt="sns이미지">
                             </a>
+                            <div class="insta-over">@hungruichenkorea</div>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="./images/1/sns6.jpg" alt="sns이미지">
                             </a>
+                            <div class="insta-over">@hungruichenkorea</div>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="./images/1/sns7.jpg" alt="sns이미지">
                             </a>
+                            <div class="insta-over">@hungruichenkorea</div>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="./images/1/sns8.jpg" alt="sns이미지">
                             </a>
+                            <div class="insta-over">@hungruichenkorea</div>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="./images/1/sns9.jpg" alt="sns이미지">
                             </a>
+                            <div class="insta-over">@hungruichenkorea</div>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="./images/1/sns10.jpg" alt="sns이미지">
                             </a>
+                            <div class="insta-over">@hungruichenkorea</div>
                         </li>
                     </ul>
 
