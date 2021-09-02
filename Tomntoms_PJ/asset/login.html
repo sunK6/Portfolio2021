@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="탐앤탐스,커피,카페,탐탐,빵,크로플">
     <meta name="format-detection" content="telephone=no">
-    <title>국내 매장 찾기 - TOM N TOMS</title>
+    <title>로그인페이지</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
-    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/media_sub.css">
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.scroll-reveal.js"></script>
     <script src="js/linksys.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/store.js"></script>
+    <script src="js/login.js"></script>
 </head>
 
 <body>
@@ -47,13 +49,13 @@
                     <ul class="gnb">
                         <!-- 1-3-1. 메뉴 -->
                         <li>
-                            <a href="./menu.html">MENU</a>
+                            <a href="#">MENU</a>
                             <div class="gnb_sub sbx1">
                                 <ol class="sub">
-                                    <li><a href="./menu.html">신메뉴</a></li>
-                                    <li><a href="./menu.html">음료</a></li>
-                                    <li><a href="./menu.html">푸드</a></li>
-                                    <li><a href="./menu.html">MD</a></li>
+                                    <li><a href="#">신메뉴</a></li>
+                                    <li class="m1"><a href="#">음료</a></li>
+                                    <li class="m2"><a href="#">푸드</a></li>
+                                    <li class="m3"><a href="#">MD</a></li>
                                 </ol>
                             </div>
                         </li>
@@ -73,10 +75,10 @@
                         </li>
                         <!-- 1-3-4. 서비스 -->
                         <li>
-                            <a href="./service.html">SERVICE</a>
+                            <a href="#">SERVICE</a>
                             <div class="gnb_sub sbx3">
                                 <ol class="sub">
-                                    <li><a href="./service.html">가맹점 개설문의</a></li>
+                                    <li><a href="#">가맹점 개설문의</a></li>
                                     <li><a href="#">마이탐 멤버쉽</a></li>
                                     <li><a href="#">제휴할인/기프트카드</a></li>
                                     <li><a href="#">렌탈 서비스</a></li>
@@ -228,7 +230,7 @@
                         <a href="#">SERVICE</a>
                         <div class="mgnb_sub msbx3">
                             <ol class="msub">
-                                <li><a href="./service.html">가맹점 개설문의</a></li>
+                                <li><a href="#">가맹점 개설문의</a></li>
                                 <li><a href="#">마이탐 멤버쉽</a></li>
                                 <li><a href="#">제휴할인/기프트카드</a></li>
                                 <li><a href="#">렌탈 서비스</a></li>
@@ -294,67 +296,57 @@
 
     </div><!-- #top -->
 
-
-    <!-- 2. 메인영역 -->
-    <main id="sub_cont">
-        <section class="scont1">
-            <!-- 2-1.타이틀 -->
-            <h2 class="sub_tit">STORE<h2>
-        </section>
-
-        <section class="scont2">
-            <!-- 2-2.메뉴탭 -->
-            <div class="ibx">
-                <div class="pbx col-12 wrapmt">
-                    <ul class="mtab">
-                        <li class="on">
-                            <a href="#">음료</a>
-                        </li>
-                        <li>
-                            <a href="#">푸드</a>
-                        </li>
-                        <li>
-                            <a href="#">MD</a>
-                        </li>
-                    </ul>
+    <!-- 2.컨텐츠영역 -->
+    <main id="cont">
+        <!-- 2-1.로그인타이틀 -->
+        <h2 class="stit">로그인</h2>
+        <!-- 2-2.로그인박스 -->
+        <div id="login">
+            <form action="process.php" method="POST" class="logF">
+                <!-- 아이디박스 -->
+                <div class="minput">
+                    <label for="mid">아이디</label>
+                    <input type="text" name="mid" id="mid" maxlength="10" placeholder="아이디를 입력해 주세요">
+                </div>
+                <!-- 비밀번호박스 -->
+                <div class="minput mi2">
+                    <label for="mpw">비밀번호</label>
+                    <input type="password" name="mpw" id="mpw" placeholder="비밀번호를 입력해 주세요">
+                </div>
+                <!-- 버튼영역 -->
+                <div class="btnbx">
+                    <input type="submit" id="sbtn" value="LOGIN">
                 </div>
 
-                <!-- 2-3.작은메뉴 -->
-                <div class="smenu">
-                    <ul class="smenu-list">
-                        <li>
-                            <a href="#">
-                                <img src="./images/1/home_i.png" alt="home icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">STORE</a>
-                        </li>
-                        <li>
-                            <a href="#">국내 매장 찾기</a>
-                        </li>
-                    </ul>
+                <!-- 기타체크링크 -->
+                <div class="addbx">
+                    <span>
+                        <input type="checkbox" id="chkbx" name="chkbx">
+                        <label for="chkbx">아이디저장</label>
+                    </span>
+                    <a href="#">아이디찾기</a> |
+                    <a href="#">비밀번호찾기</a> |
+                    <a href="#">회원가입</a>
+
                 </div>
-        </section>
+            </form>
+        </div>
 
-        <section class="ibx scont3">
-            <h1 class="st">국내 매장 찾기</h1>
-
-        </section>
-        <section class="ibx cont4">
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25321.27352628842!2d127.08384618298484!3d37.50416340378455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z7YOQ7JWk7YOQ7Iqk!5e0!3m2!1sko!2skr!4v1628399402750!5m2!1sko!2skr"></iframe>
-            </div>
-        </section>
     </main>
-
 
     <!-- 7. 하단영역 -->
     <div id="tomsinfo">
 
         <footer class="info">
 
-
+            <!-- 3-4.흐르는자막 -->
+            <div class="fcap">
+                <ol>
+                    <li>SPECIAL TEA COFFEE</li>
+                    <li>TOM N TOMS COFFEE</li>
+                    <li>SPECIAL TEA COFFEE</li>
+                </ol>
+            </div>
 
             <div class="foot_wr">
                 <!-- 가맹문의/회사주소 -->

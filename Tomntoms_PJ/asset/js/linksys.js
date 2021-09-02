@@ -55,11 +55,12 @@ $(function () { /////////// jQB /////////////////////////////////////
           url = "service.html?"
         }
         else if(nm=="COMMUNITY"){
-          url = "community.html?"
+          url = "event.html?"
         }
         else if(nm=="TOM N TOMS"){
-          url = "tomntoms.html?"
+          url = "store.html?"
         }
+        
         // else {
         //   url = "index.html";
         // }

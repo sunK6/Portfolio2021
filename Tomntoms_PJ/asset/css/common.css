@@ -120,7 +120,7 @@ body.header--on #top {box-shadow: 1px 1px 10px rgb(0 0 0 / 30%);}
     position: absolute;
     left: 0;
     width: 100px;
-    padding: 60px 25px 45px;
+    padding: 15px 10px 20px 20px;
     background-color: #fff;
     box-shadow: 0 0 0.625em rgb(0 0 0 / 10%);
     display: none;
@@ -167,7 +167,7 @@ body.header--on #top {box-shadow: 1px 1px 10px rgb(0 0 0 / 30%);}
     padding: 0 30px;
 }
 .sbx4>ol>li:first-child{
-    padding-left: 20px;
+    padding-left: 5px;
 }
 .sbx4>ol>li:nth-child(2){
     padding-left: 57px;

@@ -113,12 +113,27 @@
     margin: 0 auto;
 }
 .menusec ol li{
+    position: relative;
     flex: 33.33%;
     width: 33.33%;
 }
 .menusec ol a{
     font-size: 24px;
     font-family: NotoSansKR;
+}
+.menusec ol li::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #572a31;
+    bottom: -28px;
+    left: 34%;
+    transform: translateX(-50%);
+}
+.menusec ol li.on::before{
+    width: 100%;
 }
 
 .cont4{
@@ -191,6 +206,19 @@
     overflow: hidden;
 }
 
+.btnarea a{
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    font-weight: 400;
+    font-family: "NotoSansKR",sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 30px;
+    margin-bottom: 15px;
+}
+
 .mwrap>p{
     font-size: 22px;
     margin-bottom: 20px;
@@ -204,7 +232,7 @@
 }
 
 .txtarea{
-    padding: 60px 0;
+    padding: 43px 0;
 }
 .t1{
     font-size: 40px;
