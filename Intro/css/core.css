@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* 탐앤탐스 핵심 CSS - core.css */
+/* 핵심 CSS 범위 : 공통모듈 클래스, 웹폰트 */
+
+
+/* 웹폰트 - 나눔고딕체 */
+@font-face {
+    font-family: ng;/* 내가지은이름 */
+    src: url(../fonts/NanumGothic.woff) format("woff");
+}
+@font-face {
+    font-family: ks;
+    src: url(../fonts/KaushanScript-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: ns;
+    src: url(../fonts/NotoSansKR-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: gw;
+    src: url(../fonts/GowunBatang-Regular.woff) format("woff");
+}
+
+/* 속박스 클래스 */
+.ibx{
+    width: 1430px;
+    margin: 0 auto;
+    /* outline: 2px dotted red; */
+}
+/* 속박스 가상요소로 파티션박스 float 해제하기 */
+.ibx::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 파티션 박스 클래스 */
+.pbx{
+    float: left;/* 옆으로 */
+    box-sizing: border-box;/* 크기유지 */
+    padding: 10px;/* 패딩 */
+    /* outline: 2px dashed blue; */
+}
+
+/* IR클래스 (배경이미지 설명 숨기기) */
+/* IR(Image Replacement) */
+.ir{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+/* 요소숨기기 클래스 */
+.bld{
+    display: none;
+}
+
+/* float 해제 클래스 */
+.clb::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 부모자격 클래스 */
+.prt{
+    position: relative;
+}
+
+
+

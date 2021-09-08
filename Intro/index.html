@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.scroll-reveal.js"></script>
+    <script src="js/autoScroll_mobile.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- 1. 상단영역 -->
+    <div id="top">
+        <header class="top ibx">
+            <!-- 1-1.로고 -->
+            <h1 id="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="로고">
+                </a>
+            </h1>
+            <!-- 1-2.gnb메뉴 -->
+            <nav class="gnb">
+                <ul>
+                    <li class="on">
+                        <a href="#pg1">Home</a>
+                    </li>
+                    <li>
+                        <a href="#pg2">About</a>
+                    </li>
+                    <li>
+                        <a href="#pg3">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#pg4">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#pg5">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- 2. 페이지영역 -->
+    <section id="pg1" class="page">
+        <div class="wr1">
+            <img src="./images/lp.png" alt="lp" class="lp">
+            <img src="./images/vinyl.png" alt="lp" class="lp2">
+        </div>
+    </section>
+    <section id="pg2" class="page">
+        <h2 class="tit js-reveal">ABOUT</h2>
+        <div class="me js-reveal">
+            <img src="./images/me.jpg" alt="나">
+        </div>
+        <!--타이틀 등장액션박스-->
+        <div class="right">
+            <ul class="txts">
+                <li>신</li>
+                <li class="pd">입</li>
+                <li class="pd ent">웹</li>
+                <li>퍼</li>
+                <li>블</li>
+                <li>리</li>
+                <li class="pd">셔</li>
+                <li>지</li>
+                <li>원</li>
+                <li class="pd">자</li>
+                <li class="ent">김</li>
+                <li>지</li>
+                <li class="pd">선</li>
+                <li>입</li>
+                <li>니</li>
+                <li>다</li>
+                <li>.</li>
+            </ul>
+        </div>
+        <div class="about js-reveal">
+            <ul>
+                <li class="ab">Profile</li>
+                <li class="pl">
+                    - 김지선 <br>
+                    - 서울시 광진구 중곡동 거주 <br>
+                    - 1992.06.27 <br>
+                    - kjs92627@gmail.com
+                </li>
+            </ul>
+            <ul>
+                <li class="ab">Education</li>
+                <li>
+                    - 2021.03 ~ 2021.08 <br>
+                    - 하이미디어컴퓨터학원 <br>
+                    UI/UX 웹퍼블리셔(프론트엔드)과정 수료
+                </li>
+            </ul>
+            <ul>
+                <li class="ab">License</li>
+                <li class="pl">
+                    - 웹디자인 기능사 자격증 <br>
+                    - GTQ 그래픽기술자격 1급
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="pg3" class="page">
+        <h2 class="tit js-reveal">SKILLS</h2>
+        <ul class="skbx js-reveal">
+            <li>
+                <div class="btns">
+                    <!-- 숫자퍼센트박스 -->
+                    <span class="txt">
+                        <img src="./images/html5.png" alt="html">
+                        <b class="ptxt">0</b>%
+                    </span>
+                    <!-- svg박스 -->
+                    <svg viewBox="0 0 200 200">
+                        <circle class="c1" cx="100" cy="100" r="95" transform="rotate(-90,100,100)"></circle>
+                    </svg>
+                    <h3 class="stit">HTML5</h3>
+                    <i class="sdesc">웹표준 및 웹접근성에 준수하는 마크업을 합니다.</i>
+                </div>
+            </li>
+            <li>
+                <div class="btns">
+                    <!-- 숫자퍼센트박스 -->
+                    <span class="txt">
+                        <img src="./images/css3.png" alt="css3">
+                        <b class="ptxt">0</b>%
+                    </span>
+                    <!-- svg박스 -->
+                    <svg viewBox="0 0 200 200">
+                        <circle class="c1" cx="100" cy="100" r="95" transform="rotate(-90,100,100)"></circle>
+                    </svg>
+                    <h3 class="stit">CSS3</h3>
+                    <i class="sdesc">CSS의 최신속성을 이해하며 디자인 할 수 있습니다.</i>
+                </div>
+            </li>
+            <li>
+                <div class="btns">
+                    <!-- 숫자퍼센트박스 -->
+                    <span class="txt">
+                        <img src="./images/jquery-logo.png" alt="jquery">
+                        <b class="ptxt">0</b>%
+                    </span>
+                    <!-- svg박스 -->
+                    <svg viewBox="0 0 200 200">
+                        <circle class="c1" cx="100" cy="100" r="95" transform="rotate(-90,100,100)"></circle>
+                    </svg>
+                    <h3 class="stit">jQuery</h3>
+                    <i class="sdesc">이벤트 메소드를 사용해 기능을 구현합니다. 다양한 플러그인 활용이 가능합니다.</i>
+                </div>
+            </li>
+            <li>
+                <div class="btns">
+                    <!-- 숫자퍼센트박스 -->
+                    <span class="txt">
+                        <b class="btxt">Ps/Ai</b>
+                        <b class="ptxt">0</b>%
+                    </span>
+                    <!-- svg박스 -->
+                    <svg viewBox="0 0 200 200">
+                        <circle class="c1" cx="100" cy="100" r="95" transform="rotate(-90,100,100)"></circle>
+                    </svg>
+                    <h3 class="stit">Design</h3>
+                    <i class="sdesc">포토샵/일러스트 툴을 사용해 다양한 디자인을 활용할 수 있습니다.</i>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="pg4" class="page">
+        <h2 class="tit js-reveal">PORTFOLIO</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide js-reveal">
+                    <b class="ptit">Tom n toms</b>
+                    <a href="https://sunk6.github.io/Portfolio2021/Tomntoms_PJ/asset/index.html" target="_blank">
+                        <img src="./images/tomntoms.JPG" />
+                        
+                        <p class="intro">
+                            반응형 웹페이지 <br>
+                            개인프로젝트 <br>
+                            제작기간 3개월 <br><br>
+                        </p>
+                        <p class="desc">기존의 탐앤탐스 홈페이지를 홍루이젠 홈페이지 디자인으로 <br>
+                            리디자인하여 작업하였습니다. <br>
+                            메인페이지와 서브페이지들로 구성되어있습니다.
+                        </p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <b class="ptit">Vogue</b>
+                    <a href="https://sunk6.github.io/vogue/index.html" target="_blank">
+                        <img src="./images/vogue.JPG" />
+                        
+                        <p class="intro">
+                            반응형 웹페이지 <br>
+                            공통프로젝트 <br>
+                            제작기간 2개월 <br><br>
+                        </p>
+                        <p class="desc">
+                            잡지형식의 vogue사이트를 구현하였습니다. <br>
+                            get방식으로 서브페이지를 연동하였고 <br>
+                            모바일페이지 gnb메뉴를 신경써 작업하였습니다.
+                        </p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <b class="ptit">Discovery</b>
+                    <a href="https://sunk6.github.io/Discovery/#" target="_blank">
+                        <img src="./images/discovery.JPG" />
+                        
+                        <p class="intro">
+                            반응형 웹페이지 <br>
+                            공통프로젝트 <br>
+                            제작기간 2개월 <br><br>
+                        </p>
+                        <p class="desc">
+                            플러그인으로 서브페이지 배너와 패럴랙스 이미지를 구현하였으며 <br>
+                            전체메뉴에 동영상을 넣어 독특하게 제작하였습니다. <br>
+                            메인페이지와 서브페이지2로 구성되어있습니다.
+                        </p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <b class="ptit">Seoulland</b>
+                    <a href="https://sunk6.github.io/SeoulLand/index.html" target="_blank">
+                        <img src="./images/seoulland.JPG" />
+                        
+                        <p class="intro">
+                            모바일 페이지 <br>
+                            공통프로젝트 <br>
+                            제작기간 3개월 <br><br>
+                        </p>
+                        <p class="desc">
+                            하드코딩으로 작업하였으며 <br>
+                            12그리드를 적용하여 제작하였습니다. <br>
+                            모바일버전 페이지도 만들어보았습니다. <br>
+                        </p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <b class="ptit">Myitem</b>
+                    <a href="https://sunk6.github.io/MyItem/Asset/index.html" target="_blank">
+                        <img src="./images/myitem.JPG" />
+                        
+                        <p class="intro">
+                            공통스터디페이지 <br>
+                            공통프로젝트 <br>
+                            제작기간 3개월 <br><br>
+                        </p>
+                        <p class="desc">
+                            기본적인 사이트 구현과 <br>
+                            회원가입/로그인 페이지 구현까지 <br>
+                            스터디를 통해서 구체적으로 배워 사이트를 완성하였습니다. <br>
+                        </p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <b class="ptit">Mamonde</b>
+                    <a href="https://sunk6.github.io/Portfolio2021/Mamonde_PJ/index.html" target="_blank">
+                        <img src="./images/mamonde.JPG" />
+                        
+                        <p class="intro">
+                            메인페이지 <br>
+                            개인프로젝트 <br>
+                            제작기간 3개월 <br><br>
+                        </p>
+                        <p class="desc">
+                            코스메틱 브랜드인 마몽드 페이지의 디자인을 가져와 작업하였습니다. <br>
+                            웹폰트와 디자인을 똑같이 구현하고자 노력하였습니다. <br>
+                            가장 처음으로 만든 사이트입니다. <br>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-scrollbar"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+    <section id="pg5" class="page">
+        <article id="Contact">
+            <aside id="half4"></aside>
+            <section class="white">
+                <aside><h2 class="tit js-reveal">CONTACT <span>ME</span></h2>
+                    <p class="ctxt js-reveal">제 포트폴리오를 봐주셔서 감사합니다. <br>
+                        "안되면 되게하라"는 저의 모토와 더불어 <br>
+                        늘 배우려는 마음가짐으로 노력하는 <br>
+                        웹 퍼블리셔, 김지선이 되겠습니다. <br>
+                    </p>
+                    <ul id="con">
+                        <li><div><img src="images/email-icon.svg"></div><h3>kjs92627@gmail.com</h3></li>
+                        <li><div><img src="images/tablet-icon.svg"></div><h3>010-6369-2279</h3></li>
+                    </ul>
+               </aside>
+            </section>
+        </article><!--컨택-->
+    </section>
+
+
+
+</body>
+
+</html>

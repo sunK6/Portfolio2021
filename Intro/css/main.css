@@ -1,0 +1,676 @@
+@charset "utf-8";
+
+/* 인트로 사이트 메인 CSS - main.css */
+@import url(core.css);
+@import url(reset.css);
+
+/* 스크롤 등장 클래스 */
+.js-reveal {
+    opacity: 1;
+    transition: opacity 1.5s ease-in, margin-top 1.5s ease-out;
+}
+
+.js-reveal--hidden {
+    opacity: 0;
+    margin-top: 200px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* 보이는화면기준 채우기 */
+    /* body하위 요소의 높이값 %의 기준이됨! */
+    overflow: hidden;
+    /* 스크롤바 없애기/스크롤안되기 */
+}
+
+/* 공통셋팅 */
+a {
+    text-decoration: none;
+    color: #000;
+    text-shadow: 0 0 2px #777;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul::after {
+    /* float 해제 */
+    content: '';
+    display: block;
+    clear: both;
+}
+
+li {
+    float: left;
+    /* 옆으로 흐르게 */
+}
+
+img {
+    border: none;
+    /* 이미지 링크시 테두리없앰 */
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+/* 공통 class */
+
+/* 페이지 공통 class */
+.page {
+    /* 한페이지 보이는 화면 채우기 */
+    width: 100%;
+    height: 100%;
+    /* 
+        width: 100vw;
+        height: 100vh;
+        보이는 화면 기준의 뷰포트단위를 쓰면
+        body의 height가 100%가 필요없다!
+        왜냐면 보이는 화면을 기준하니까!
+        단, vw단위는 스크롤바 트랙까지 포함한
+        화면 전체를 기준하므로 데스크탑에서는 
+        100%를 사용하는게 좋다!
+        (이유는 가로스크롤바가 생기게 되므로?)
+     */
+}
+
+/* IR(배경이미지 설명 숨기기) class */
+.ir {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* 중앙 속박스 */
+.ibx {
+
+    width: 1920px;
+    max-width: 100%;
+    /* 1920px보다 작을땐 100%를 유지한다!! */
+    margin: 0 auto;
+    /* 마영오 - 중앙정렬 */
+}
+
+/* 1. 상단영역 */
+#top {
+    position: fixed;
+    /* 상단고정: 보이는 화면기준 */
+    width: 100%;
+    z-index: 999;
+    /* 맨위! */
+}
+
+/* 상단영역 속박스 */
+.top {
+    position: relative;
+    /* 부모자격 */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+/* 1-1.로고 */
+#logo {
+    width: 190px;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#logo img {
+    width: 100%;
+}
+
+/* 1-2. gnb메뉴 */
+.gnb {
+    width: 100%;
+}
+
+.gnb ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.gnb a {
+    font-family: Verdana;
+    font-size: 20px;
+    transition: transform .3s;
+}
+
+/* 메뉴에 마우스 오버시 + li에 on클래스 있는경우 */
+.gnb a:hover,
+.gnb li.on a {
+    display: inline-block;
+    /* 트랜스폼적용위해 */
+    transform: scale(1.1);
+    /* 인라인은 scale이 적용이 안됨! */
+    color: #fccc00;
+}
+
+
+
+
+
+/* 2. 페이지영역 */
+/* 개별 페이지 셋팅 */
+#pg1 {
+    background: url(../images/grunge-concrete-wall.jpg) no-repeat top/cover;
+}
+
+.wr1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+
+.wr1 .lp {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/
+
+    animation: lp 5s ease-in-out infinite;
+}
+
+@keyframes lp {
+    from {
+        transform: translate(-50%, -50%) rotate(0);
+        transform-origin: center center;
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(3600deg);
+        /* transform-origin: center; */
+    }
+}
+
+.wr1 .lp2 {
+    position: absolute;
+    top: 46%;
+    left: 55%;
+    width: 41%;
+    transform: translate(-50%, -50%);
+}
+
+
+#pg2 {
+    position: relative;
+
+}
+
+.me {
+    position: relative;
+    width: 573px;
+    top: 25px;
+    left: 115px;
+}
+
+.me img {
+    width: 100%;
+}
+
+.right {
+    position: absolute;
+    top: 25%;
+    right: 21%;
+}
+
+/* 타이틀박스*/
+.txts {
+    font: bold 3.2rem "ns";
+    letter-spacing: 2px;
+    color: #90837f;
+}
+
+/*패딩으로 띄어쓰기*/
+.pd {
+    padding-right: 10px;
+}
+
+/*float해제로 줄바꿈*/
+.ent {
+    clear: left;
+}
+
+/*글자초기셋팅*/
+.txts>li {
+    position: relative;
+    top: -100px;
+    left: 200px;
+    opacity: 0;
+}
+
+.about {
+    position: absolute;
+    top: 50%;
+    width: 781px;
+    right: 261px;
+    background-color: #e4d9d9;
+    border-radius: 50%;
+    font: normal 1.3rem "ns";
+    color: #504126;
+    letter-spacing: 1.8px;
+}
+
+.ab {
+    font: bold 3rem "ks";
+    color: #504126;
+    padding-bottom: 78px;
+    padding-right: 150px;
+    margin-left: -94px;
+    padding-top: 16px;
+}
+
+.pl {
+    padding-left: 63px;
+    padding-top: 20px;
+}
+
+
+#pg3 {
+    position: relative;
+    background: url(../images/background-2547101_1920.jpg) no-repeat top/cover;
+}
+
+.tit {
+    position: relative;
+    padding-top: 11vh;
+    font-size: 3.2vw;
+    text-align: center;
+    font-family: Verdana;
+    color: #2d2d2d;
+    font-weight: normal;
+    letter-spacing: -2px;
+}
+
+.tit::before {
+    content: '';
+    position: absolute;
+    width: 230px;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%) skew(20deg);
+    height: 28px;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+/* 파티션 박스 */
+.skbx {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 15vh;
+}
+
+/* 원을 담는 박스 */
+.btns {
+    position: relative;
+    width: 15vw;
+    /* background-color: orangered; */
+    border-radius: 50%;
+}
+
+/* 비율밀기 */
+.btns::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+/* svg셋팅 */
+.btns svg {
+    position: absolute;
+    top: 0;
+    /* 부모박스가 패딩탑으로 비율밀기하므로
+            앱솔로 부모박스 맨위로 위치고정! 
+            svg 자체는 viewBox설정 때문에 채우기 비율유지함!*/
+}
+
+/* circle 설정 */
+.c1 {
+    fill: none;
+    /* 채우기-기본색은 검정색(transparent-투명,none-없음) */
+    stroke: rgb(41 61 144);
+    /* 선색(안쓰면 안나옴) */
+    stroke-width: 10;
+    /* 선두께는 안쓰면 1px, 단위없으면 px */
+    stroke-linecap: round;
+    /* 선끝둥글게 */
+
+    stroke-dasharray: 300%;
+    /* 데쉬어레이를 50%로 놓고 선,공백이 몇조각나는지 본다!
+            50% * 6조각 = 300% 즉, 선으로만 채우는 크기임! */
+
+    stroke-dashoffset: 300%;
+    /* 데쉬어레이와 같은 크기를 데쉬옵셋에 주면 시작점이
+            밀려서 공백부터 시작함-> 선이 숨겨지는 효과가 생김! */
+
+    /* 트랜지션: 퍼센트 증가에 따른 애니메이션 */
+    transition: .1s linear;
+}
+
+
+/* 퍼센트 글자박스 */
+.txt {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vw;
+    text-shadow: 2px 2px 2px #000;
+    color: #fff;
+}
+
+.txt img {
+    position: absolute;
+    width: 210%;
+    left: 50%;
+    top: -33%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 40px;
+}
+
+.btxt {
+    position: absolute;
+    /* width: 210%; */
+    left: 50%;
+    top: -33%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 40px;
+}
+
+/* 액션버튼박스 */
+.act {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.act button {
+    font-size: 50px;
+}
+
+.stit {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: rgb(39, 39, 39);
+}
+
+.sdesc {
+    background-color: rgba(255, 255, 255, 0.589);
+    display: inline-block;
+    font-style: normal;
+    font-size: 1vw;
+    font-family: "ns";
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: rgb(63, 63, 63);
+}
+
+
+#pg4 {
+    position: relative;
+    background-color: rgba(5, 5, 5, 0.027)
+}
+
+#pg4 .tit {
+    color: #000;
+}
+
+.swiper {
+    width: 100%;
+    height: 82%;
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .swiper-slide:first-child {
+        transition: transform 100ms;
+    }
+
+    .swiper-slide:first-child img {
+        transition: box-shadow 500ms;
+    }
+
+    .swiper-slide.swiper-slide-active:first-child {
+        transform: translateX(50%);
+        z-index: 2;
+    }
+
+    .swiper-slide img {
+        box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    .swiper-slide:nth-child(2) {
+        transition: transform 100ms;
+    }
+
+    .swiper-slide.swiper-slide-next:nth-child(2) {
+        transform: translateX(55%);
+        z-index: 1;
+    }
+
+    .swiper[dir="rtl"] .swiper-slide.swiper-slide-active:first-child {
+        transform: translateX(-50%);
+    }
+
+    .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
+        transform: translateX(-55%);
+    }
+}
+
+.swiper-slide a {
+    position: relative;
+}
+
+
+.ptit {
+    font-size: 30px;
+    font-family: "ks";
+    letter-spacing: 1px;
+}
+
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 252px;
+    height: 157px;
+    color: #fff;
+    font-size: 17px;
+    font-family: "ns";
+    letter-spacing: 2px;
+    line-height: 3;
+    text-align: center;
+}
+
+.desc {
+    width: 100%;
+    font-size: 14px;
+    font-family: "gw";
+    background-color: rgba(255, 255, 255, 0.705);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+
+#Contact {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #dac3c254;
+    overflow: hidden;
+}
+
+#half4 {
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    height: 70%;
+    width: 130%;
+    transform: rotate(5deg)
+        /*translateX(-50%)*/
+    ;
+    background-color: #b99ea18f;
+}
+
+#Contact>.white>aside {
+    position: absolute;
+    width: 800px;
+    height: 77%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid #000;
+    box-shadow: 15px 15px 0px -3px #666;
+}
+
+#Contact>.white>aside h2 {
+    position: relative;
+    margin-top: -60px;
+}
+
+#Contact>.white>aside h2 span {
+    position: relative;
+    top: 15px;
+    margin-left: 0px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#con {
+    position: relative;
+    top: 3%;
+    width: 100%;
+    height: 80%;
+}
+
+#con>li {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+#con>li>div {
+    position: relative;
+    top: 35%;
+}
+
+#con>li>div>img {
+    position: relative;
+    width: 20%;
+    left: 0;
+}
+
+#con>li>h3 {
+    position: relative;
+    top: 42%;
+    font: bold 1.3em "gw";
+    color: #333;
+}
+
+.ctxt {
+    padding-top: 80px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    font-weight: bold;
+    font-family: "ng";
+    font-size: 22px;
+}
+
+
+/* 모바일 미디어쿼리 */
+@media only screen and (max-width:500px) {
+
+    /* 상단영역 속박스 */
+    .top {
+        height: 120px;
+    }
+
+    /* 1-1.로고 */
+    #logo {
+        margin: 0 auto;
+    }
+
+    /* 1-2. gnb메뉴 */
+    .gnb {
+        top: 68px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 330px;
+    }
+
+    /* gnb메뉴 5번째 li 왼쪽마진밀기  */
+    .gnb li:nth-child(5) {
+        margin-left: 45px;
+    }
+
+    /* 메뉴에 마우스 오버시 해제하기 
+    -> 모바일에서는 오버가 없으므로 오버시 셋팅을
+    오버 이전 상태로 다시 셋팅한다!★ */
+    .gnb a:hover {
+        color: #fff;
+        text-decoration: none;
+        transform: none;
+    }
+
+    /* 인디케이터 마우스오버시 해제하기 */
+    .indic li:hover a {
+        width: 100%;
+        background-color: #ccc;
+    }
+
+    /* 두번째 페이지 배경위치조정 */
+    #pg2 {
+        background-position-x: right;
+    }
+
+}
+
+/* 모바일 미디어쿼리 */
