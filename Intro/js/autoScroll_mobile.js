@@ -196,7 +196,7 @@ $(function () { /// jQB ////////////////////////
             psts = 1; //불허용상태변경!
             setTimeout(() => {
                 psts = 0;
-            }, 1200);
+            }, 1000);
             // 1.2초애니시간후 허용상태변경 //
 
 
@@ -309,7 +309,7 @@ $(function () { /// jQB ////////////////////////
 
             $("html,body").stop().animate({
                 scrollTop: pos + "px"
-            }, 1200, "easeOutQuint", pageAction);
+            }, 1000, "easeOutQuint", pageAction);
 
             ///////////////////////////////////////////////
             // 5. 페이지번호(pno)에 맞는 GNB 메뉴 변경하기 //
@@ -395,6 +395,8 @@ function pageAction() {
     // 함수호출여부확인
     console.log("페이지액션!" + pno);
 
+    // $('body').attr('class', '_curr_page' + pno);
+
     ////  페이지 글자등장하기 /////
     if (pno === 1) {
 
@@ -408,7 +410,7 @@ function pageAction() {
                     top: "0",
                     left: "0",
                     opacity: "1"
-                }, 1000, "easeInExpo");
+                }, 600, "easeInExpo");
 
 
         }); ////////// each /////////////////

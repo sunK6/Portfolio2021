@@ -60,6 +60,8 @@ $(function () { // jQB ////////////////////////
         // 전역변수 페이지번호(pno)와 gnb메뉴 li순번과 같다!
         pno = idx;
         console.log("페이지번호:" + pno);
+        
+        
 
         pageAction();
 
