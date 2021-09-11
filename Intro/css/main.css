@@ -163,6 +163,70 @@ h3 {
     color: #fccc00;
 }
 
+/* 모바일용 햄버거 버튼 */
+#ham {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scaleX(1.4);
+    right: 5%;
+    background-color: transparent;
+    border: none;
+    font-size: 8vw;
+    color: rgb(31, 31, 31);
+    display: none;
+    /* DT에서 안보임 */
+}
+
+/* 가상요소로 햄버거모양 글자넣기
+(왜?가상요소야? css에서 x버튼으로 변경하려고!) */
+#ham::before {
+    content: '≡';
+}
+
+/* .on먹은 햄버거버튼 */
+#ham.on {
+    color: #fff;
+    transform: translateY(-50%) scaleX(1);
+    z-index: 999999;
+}
+
+/* 닫기버튼 모양글자로 변경 */
+#ham.on::before {
+    content: '×';
+}
+
+
+/* 모바일용 GNB 메뉴 */
+.mgnb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 9999;
+    display: none;
+    /* 햄버거버튼 클릭전엔 안보임 */
+}
+
+.mgnb ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.mgnb li {
+    width: 100%;
+    text-align: center;
+}
+
+.mgnb a {
+    color: #fff;
+    font-family: ng;
+    font-size: 5vh;
+    line-height: 2;
+}
 
 
 
@@ -219,7 +283,7 @@ h3 {
 
 .me {
     position: relative;
-    width: 573px;
+    width: 28%;
     top: 25px;
     left: 115px;
 }
@@ -261,9 +325,9 @@ h3 {
 
 .about {
     position: absolute;
-    top: 50%;
-    width: 781px;
-    right: 261px;
+    top: 53%;
+    width: 43%;
+    right: 10%;
     background-color: #e4d9d9;
     border-radius: 50%;
     font: normal 1.3rem "ns";
@@ -274,15 +338,19 @@ h3 {
 .ab {
     font: bold 3rem "ks";
     color: #504126;
-    padding-bottom: 78px;
-    padding-right: 150px;
-    margin-left: -94px;
-    padding-top: 16px;
+    padding-bottom: 13%;
+    padding-right: 18%;
+    margin-left: -7%;
 }
-
+.ed{
+    padding-bottom: 6%;
+}
+.lic{
+    padding-bottom: 4%;
+}
 .pl {
-    padding-left: 63px;
-    padding-top: 20px;
+    padding-left: 8%;
+    padding-top: 2%;
 }
 
 
@@ -446,7 +514,7 @@ h3 {
 
 .swiper {
     width: 100%;
-    height: 82%;
+    height: 81%;
 }
 
 .swiper-slide {
@@ -454,7 +522,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 40px;
 }
 
 .swiper-slide img {
@@ -559,16 +627,16 @@ h3 {
 
 #Contact>.white>aside {
     position: absolute;
-    width: 800px;
+    width: 44%;
     height: 77%;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
     text-align: center;
     margin: 0 auto;
-    border: 2px solid #000;
-    box-shadow: 15px 15px 0px -3px #666;
+    border: 2px dashed #555;
+    box-shadow: 15px 15px 0px -3px #66666680;
 }
 
 #Contact>.white>aside h2 {
@@ -626,17 +694,39 @@ h3 {
 }
 
 
+/* 위로가기 버튼 */
+/* .tbtn {
+    position: fixed;
+    bottom: 0;
+    right: 75px;
+    width: 48px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 4px 4px 0 0;
+    둥근모서리 : 왼위 오른위 오른아래 왼아래(시계방향)
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.9;
+    z-index: 999;
+    display: none;
+    처음에 안보임
+} */
+
+
 /* 모바일 미디어쿼리 */
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:769px) {
 
     /* 상단영역 속박스 */
     .top {
-        height: 120px;
+        height: 85px;
     }
 
     /* 1-1.로고 */
     #logo {
         margin: 0 auto;
+        width: 173px;
     }
 
     /* 1-2. gnb메뉴 */
@@ -646,37 +736,113 @@ h3 {
         left: 50%;
         transform: translateX(-50%);
         width: 330px;
+        display: none;
     }
 
-    /* gnb메뉴 5번째 li 왼쪽마진밀기  */
-    .gnb li:nth-child(5) {
-        margin-left: 45px;
+    /* 4. 햄버거 버튼 보이기 */
+    #ham {
+        display: block;
     }
 
-    /* 메뉴에 마우스 오버시 해제하기 
-    -> 모바일에서는 오버가 없으므로 오버시 셋팅을
-    오버 이전 상태로 다시 셋팅한다!★ */
-    .gnb a:hover {
-        color: #fff;
-        text-decoration: none;
-        transform: none;
+    .tit {
+        padding-top: 18vh;
+        font-size: 4.2vw;
+        font-weight: bold;
     }
 
-    /* 인디케이터 마우스오버시 해제하기 */
-    .indic li:hover a {
+    .tit::before {
+        width: 81px;
+        bottom: -7px;
+        height: 16px;
+    }
+
+    .txts {
+        font: bold 1.2rem "ns";
+        color: #2d2d2d;
+    }
+
+    .right {
+        top: 22%;
+        right: 47%;
+    }
+
+    .about {
+        top: 68%;
         width: 100%;
-        background-color: #ccc;
+        right: 0;
+        font: normal 0.6rem "ns";
+        text-align: center;
+        letter-spacing: 1px;
     }
 
-    /* 두번째 페이지 배경위치조정 */
-    #pg2 {
-        background-position-x: right;
+    .me {
+        width: 194px;
+        top: 28px;
+        left: 0;
+        margin: 0 auto;
     }
 
+    .pl {
+        padding-top: 0;
+        padding-left: 0;
+        letter-spacing: 1px;
+    }
+
+    .ab {
+        font: bold 1rem "ks";
+        padding-bottom: 0;
+        padding-right: 0;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .about li {
+        float: none;
+    }
+
+    .wr1 .lp {
+        width: 68%;
+    }
+
+    .wr1 .lp2 {
+        left: 60%;
+        width: 73%;
+    }
+
+    .swiper-horizontal>.swiper-scrollbar {
+        display: none;
+    }
+
+    #Contact>.white>aside h2 span {
+        font-size: 29px;
+    }
+
+    .ctxt {
+        font-size: 13px;
+    }
+
+    #con {
+        height: 22%;
+    }
+
+    #con>li {
+        width: 50%;
+    }
+
+    #con>li>h3 {
+        font: bold .8em "gw";
+    }
+
+    #con>li>div>img {
+        width: 13%;
+    }
+
+    #Contact>.white>aside {
+        width: 300px;
+        height: 54%;
+        top: 23%;
+    }
 }
-
-
-
 
 /* 모바일 미디어쿼리 */
 

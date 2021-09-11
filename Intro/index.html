@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -45,6 +47,30 @@
                     </li>
                 </ul>
             </nav>
+            <!-- 모바일용 햄버거 메뉴 -->
+            <button id="ham"></button>
+
+            <!-- 모바일용 GNB 메뉴 -->
+            <nav class="mgnb">
+                <ul>
+                    <li class="on">
+                        <a href="#pg1">Home</a>
+                    </li>
+                    <li>
+                        <a href="#pg2">About</a>
+                    </li>
+                    <li>
+                        <a href="#pg3">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#pg4">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#pg5">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
         </header>
     </div>
 
@@ -93,7 +119,7 @@
                 </li>
             </ul>
             <ul>
-                <li class="ab">Education</li>
+                <li class="ab ed">Education</li>
                 <li>
                     - 2021.03 ~ 2021.08 <br>
                     - 하이미디어컴퓨터학원 <br>
@@ -101,7 +127,7 @@
                 </li>
             </ul>
             <ul>
-                <li class="ab">License</li>
+                <li class="ab lic">License</li>
                 <li class="pl">
                     - 웹디자인 기능사 자격증 <br>
                     - GTQ 그래픽기술자격 1급
@@ -183,7 +209,7 @@
                     <b class="ptit">Tom n toms</b>
                     <a href="https://sunk6.github.io/Portfolio2021/Tomntoms_PJ/asset/index.html" target="_blank">
                         <img src="./images/tomntoms.JPG" />
-                        
+
                         <p class="intro">
                             반응형 웹페이지 <br>
                             개인프로젝트 <br>
@@ -199,7 +225,7 @@
                     <b class="ptit">Vogue</b>
                     <a href="https://sunk6.github.io/vogue/index.html" target="_blank">
                         <img src="./images/vogue.JPG" />
-                        
+
                         <p class="intro">
                             반응형 웹페이지 <br>
                             공통프로젝트 <br>
@@ -216,7 +242,7 @@
                     <b class="ptit">Discovery</b>
                     <a href="https://sunk6.github.io/Discovery/#" target="_blank">
                         <img src="./images/discovery.JPG" />
-                        
+
                         <p class="intro">
                             반응형 웹페이지 <br>
                             공통프로젝트 <br>
@@ -233,7 +259,7 @@
                     <b class="ptit">Seoulland</b>
                     <a href="https://sunk6.github.io/SeoulLand/index.html" target="_blank">
                         <img src="./images/seoulland.JPG" />
-                        
+
                         <p class="intro">
                             모바일 페이지 <br>
                             공통프로젝트 <br>
@@ -250,7 +276,7 @@
                     <b class="ptit">Myitem</b>
                     <a href="https://sunk6.github.io/MyItem/Asset/index.html" target="_blank">
                         <img src="./images/myitem.JPG" />
-                        
+
                         <p class="intro">
                             공통스터디페이지 <br>
                             공통프로젝트 <br>
@@ -267,7 +293,7 @@
                     <b class="ptit">Mamonde</b>
                     <a href="https://sunk6.github.io/Portfolio2021/Mamonde_PJ/index.html" target="_blank">
                         <img src="./images/mamonde.JPG" />
-                        
+
                         <p class="intro">
                             메인페이지 <br>
                             개인프로젝트 <br>
@@ -291,22 +317,34 @@
         <article id="Contact">
             <aside id="half4"></aside>
             <section class="white">
-                <aside><h2 class="tit">CONTACT <span>ME</span></h2>
+                <aside>
+                    <h2 class="tit">CONTACT <span>ME</span></h2>
                     <p class="ctxt">제 포트폴리오를 봐주셔서 감사합니다. <br>
                         "안되면 되게하라"는 저의 모토와 더불어 <br>
                         늘 배우려는 마음가짐으로 노력하는 <br>
                         웹 퍼블리셔, 김지선이 되겠습니다. <br>
                     </p>
                     <ul id="con">
-                        <li><div><img src="images/email-icon.svg"></div><h3>kjs92627@gmail.com</h3></li>
-                        <li><div><img src="images/tablet-icon.svg"></div><h3>010-6369-2279</h3></li>
+                        <li>
+                            <div><img src="images/email-icon.svg"></div>
+                            <h3>kjs92627@gmail.com</h3>
+                        </li>
+                        <li>
+                            <div><img src="images/tablet-icon.svg"></div>
+                            <h3>010-6369-2279</h3>
+                        </li>
                     </ul>
-               </aside>
+                </aside>
             </section>
-        </article><!--컨택-->
+        </article>
+        <!--컨택-->
     </section>
 
 
+    <!-- 위로가기 버튼 -->
+    <!-- <a href="#pg1" class="tbtn fi fi-angle-up">
+        <span class="ir">위로가기버튼</span>
+    </a> -->
 
 </body>
 
