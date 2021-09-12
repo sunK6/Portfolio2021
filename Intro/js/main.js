@@ -3,7 +3,7 @@
 
 $(function () { // jQB ////////////////////////
 
-
+/*
     // 메뉴 a요소 기본이동 막기!
     $(".gnb a,.indic a").click(function (e) {
         e.preventDefault();
@@ -61,11 +61,33 @@ $(function () { // jQB ////////////////////////
         pno = idx;
         console.log("페이지번호:" + pno);
 
-        // 7. 페이지 이동과 동시에 pageAction 호출! 등장액션!
+
+*/
+
+        $('.page').each(function(idx){
+            $(this).attr('data-top', $(this).offset().top)
+        });
+
+
+        $('.gnb li a').on('click', function(e){
+            e.preventDefault();
+
+            var tHref = $(this).attr('href');
+
+            $("html,body").animate({
+                scrollTop: $(tHref).attr('data-top') + "px"
+            });
+
+            
+            $('.gnb li').removeClass('on');
+            $(this).parent('li').addClass('on');
+        });
+
+
 
         pageAction();
 
-    }); //////// click //////////////////////////////
+    //}); //////// click //////////////////////////////
 
 
 

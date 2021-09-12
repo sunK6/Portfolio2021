@@ -10,12 +10,18 @@ let psts = 0;
 /////////////////////////////////////
 
 $(function () { /// jQB ////////////////////////
+    $('.gnb li a').on('click', function(e){
+       var tNum = $(this).parent('li').index();
+
+       console.log(tNum);
+
+       pno = tNum;
+    });
 
     /// 모바일일때 body에 스크롤바 생성하기 ///
-    // if($(window).width() <= 500){
-    //     $("body").css({overflowY:"scroll"});
-    // } ///////////// if /////////////////////
-    // 테스트 결과 안정적인 기능을 위해 세로스크롤은 없는것으로!
+    if($(window).width() <= 500){
+        $("body").css({overflowY:"scroll"});
+    } ///////////// if /////////////////////
 
     /* 이벤트 중복발생 막기! */
     // 대상: #top, .indic
@@ -132,9 +138,9 @@ $(function () { /// jQB ////////////////////////
         // 4. 실제 이동위치로 스크롤 애니메이션 하기 ////
         //////////////////////////////////////////////
 
-        $("html,body").stop().animate({
-            scrollTop: pos + "px"
-        }, 1200, "easeOutQuint");
+        // $("html,body").stop().animate({
+        //     scrollTop: pos + "px"
+        // }, 1200, "easeOutQuint");
 
         ///////////////////////////////////////////////
         // 5. 페이지번호(pno)에 맞는 GNB 메뉴 변경하기 //
