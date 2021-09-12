@@ -646,13 +646,13 @@ h3 {
 
     /* 상단영역 속박스 */
     .top {
-        height: 85px;
+        height: 80px;
     }
 
     /* 1-1.로고 */
     #logo {
         margin: 0 auto;
-        width: 173px;
+        width: 170px;
     }
 
     /* 1-2. gnb메뉴 */
@@ -671,7 +671,7 @@ h3 {
     }
 
     .tit {
-        padding-top: 18vh;
+        padding-top: 13vh;
         font-size: 4.2vw;
         font-weight: bold;
     }
@@ -693,17 +693,18 @@ h3 {
     }
 
     .about {
-        top: 68%;
+        top: 58%;
         width: 100%;
         right: 0;
         font: normal 0.6rem "ns";
         text-align: center;
         letter-spacing: 1px;
+        background-color: #e4d9d9bb;
     }
 
     .me {
         width: 194px;
-        top: 28px;
+        top: 23px;
         left: 0;
         margin: 0 auto;
     }
@@ -733,6 +734,22 @@ h3 {
     .wr1 .lp2 {
         left: 60%;
         width: 73%;
+    }
+    .skbox{
+        width: 75%;
+        padding-bottom: 0;
+    }
+    .sktit{
+        font-size: 3.5vw;
+    }
+    .skbox p{
+        font-size: 1.5vw;
+    }
+    .bar{
+        height: 3vh;
+    }
+    .bar::after{
+        height: 3vh;
     }
 
     .swiper-horizontal>.swiper-scrollbar {
@@ -764,8 +781,8 @@ h3 {
     }
 
     #Contact>.white>aside {
-        width: 300px;
-        height: 54%;
+        width: 264px;
+        height: 61%;
         top: 23%;
     }
 }
