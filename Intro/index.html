@@ -13,7 +13,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/autoScroll_mobile.js"></script>
+    <script src="js/autoScroll.js"></script>
     <script src="js/main.js"></script>
 </head>
 
@@ -137,68 +137,34 @@
     </section>
     <section id="pg3" class="page">
         <h2 class="tit">SKILLS</h2>
-        <ul class="skbx">
-            <li>
-                <div class="btns">
-                    <!-- 숫자퍼센트박스 -->
-                    <span class="txt">
-                        <img src="./images/html5.png" alt="html">
-                        <b class="ptxt">0</b>%
-                    </span>
-                    <!-- svg박스 -->
-                    <svg viewBox="0 0 200 200">
-                        <circle class="c1" cx="100" cy="100" r="95" transform="rotate(-90,100,100)"></circle>
-                    </svg>
-                    <h3 class="stit">HTML5</h3>
-                    <i class="sdesc">웹표준 및 웹접근성에 준수하는 마크업을 합니다.</i>
-                </div>
-            </li>
-            <li>
-                <div class="btns">
-                    <!-- 숫자퍼센트박스 -->
-                    <span class="txt">
-                        <img src="./images/css3.png" alt="css3">
-                        <b class="ptxt">0</b>%
-                    </span>
-                    <!-- svg박스 -->
-                    <svg viewBox="0 0 200 200">
-                        <circle class="c1" cx="100" cy="100" r="95" transform="rotate(-90,100,100)"></circle>
-                    </svg>
-                    <h3 class="stit">CSS3</h3>
-                    <i class="sdesc">CSS의 최신속성을 이해하며 디자인 할 수 있습니다.</i>
-                </div>
-            </li>
-            <li>
-                <div class="btns">
-                    <!-- 숫자퍼센트박스 -->
-                    <span class="txt">
-                        <img src="./images/jquery-logo.png" alt="jquery">
-                        <b class="ptxt">0</b>%
-                    </span>
-                    <!-- svg박스 -->
-                    <svg viewBox="0 0 200 200">
-                        <circle class="c1" cx="100" cy="100" r="95" transform="rotate(-90,100,100)"></circle>
-                    </svg>
-                    <h3 class="stit">jQuery</h3>
-                    <i class="sdesc">이벤트 메소드를 사용해 기능을 구현합니다. 다양한 플러그인 활용이 가능합니다.</i>
-                </div>
-            </li>
-            <li>
-                <div class="btns">
-                    <!-- 숫자퍼센트박스 -->
-                    <span class="txt">
-                        <b class="btxt">Ps/Ai</b>
-                        <b class="ptxt">0</b>%
-                    </span>
-                    <!-- svg박스 -->
-                    <svg viewBox="0 0 200 200">
-                        <circle class="c1" cx="100" cy="100" r="95" transform="rotate(-90,100,100)"></circle>
-                    </svg>
-                    <h3 class="stit">Design</h3>
-                    <i class="sdesc">포토샵/일러스트 툴을 사용해 다양한 디자인을 활용할 수 있습니다.</i>
-                </div>
-            </li>
-        </ul>
+        <div class="cont">
+            <div class="skbox">
+                <h2 class="sktit">HTML</h2>
+                <div class="bar hbar"></div>
+                <p>웹표준 및 웹접근성에 준수하는 마크업을 합니다.</p>
+            </div>
+            <div class="skbox">
+                <h2 class="sktit">CSS</h2>
+                <div class="bar cbar"></div>
+                <p>CSS의 최신속성을 이해하며 디자인 할 수 있습니다.</p>
+            </div>
+            <div class="skbox">
+                <h2 class="sktit">JS</h2>
+                <div class="bar jbar"></div>
+                <p>이벤트 메소드를 사용해 기능을 구현합니다. 다양한 플러그인 활용이 가능합니다.</p>
+            </div>
+            
+            <div class="skbox">
+                <h2 class="sktit">Photoshop</h2>
+                <div class="bar pbar"></div>
+                <p>합성, 사진 편집 등의 2D 그래픽 작업을 비롯한 다양한 웹 시안 작업이 가능합니다.</p>
+            </div>
+            <div class="skbox">
+                <h2 class="sktit">Illustrator</h2>
+                <div class="bar ibar"></div>
+                <p>아이콘 제작 등 벡터 소스의 자유로운 제작과 편집이 가능합니다.</p>
+            </div>
+        </div>
     </section>
 
     <section id="pg4" class="page">

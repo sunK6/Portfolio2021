@@ -61,11 +61,13 @@ $(function () { // jQB ////////////////////////
         pno = idx;
         console.log("페이지번호:" + pno);
 
-
+        // 7. 페이지 이동과 동시에 pageAction 호출! 등장액션!
 
         pageAction();
 
     }); //////// click //////////////////////////////
+
+
 
     ///////////// 모바일 메뉴 클릭시 전체메뉴 보이기 //////////////////////
 
@@ -83,6 +85,8 @@ $(function () { // jQB ////////////////////////
         $("#ham").removeClass("on");
         $(".mgnb").hide();
     }); ///click//
+
+    
 
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
